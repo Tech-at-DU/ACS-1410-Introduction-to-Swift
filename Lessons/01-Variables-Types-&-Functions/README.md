@@ -422,7 +422,8 @@ We use -> followed by the type of the return value. Then inside the function we 
 
 ## In Class Activity
 
-[Playground on today's topics.](https://github.com/Make-School-Labs/swift-lab1)
+- [Variables Playground](https://github.com/MakeSchool-Tutorials/Intro-Variables-Swift-Playground/archive/swift4.zip)
+- [Playground on today's topics.](https://github.com/Make-School-Labs/swift-lab1)
 
 <!-- > -->
 
