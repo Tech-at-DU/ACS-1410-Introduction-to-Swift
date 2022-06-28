@@ -84,7 +84,7 @@ Students by the end of the course will be able to ...
 [Lab 3]: https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Lab3.md
 [Lab 4]: https://github.com/Make-School-Labs/swift-lab4
 [Calculator app]: Lessons/05-SwiftUI1/README.md
-[Magic 8 ball]: https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball
+[Magic 8 ball]: https://github.com/Tech-at-DU/Magic-8Ball-Swift4
 [Final Project]: Assignments/FinalProject.md
 
 [POP Lab]: https://github.com/soggybag/swift-inheritance
