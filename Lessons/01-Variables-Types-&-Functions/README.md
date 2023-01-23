@@ -441,4 +441,5 @@ Complete the playground on today's topics if you aren't done yet, submit to Grad
 - [About Swift](https://docs.swift.org/swift-book/index.html)
 - [Apple's documentation on Variables & Constants](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
 - [Video on Types in Swift](https://www.youtube.com/watch?v=BlXrMgmvNBI)
+- [Intro To Swift Playlist](https://www.youtube.com/watch?v=OD4Waw9b4NM&list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr)
 - [Article explaining Functions](https://learnappmaking.com/swift-functions-how-to/)
