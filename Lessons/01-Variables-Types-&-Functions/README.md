@@ -172,7 +172,7 @@ Choose names for your variables and constants that reflect what they are. This w
 
 <!-- v -->
 
-In Swift is common to use **camel case**.
+In Swift it is common to use **camel case**.
 
 - Start with lower case
 - If the name has more than one word, start the next words with uppercase
@@ -230,7 +230,9 @@ Source: Swift Fundamentals. Apple Books.
 
 In this playground we review the concepts learned so far, experiment using arithmetic operations and also learn about a new type: Strings.
 
-[Variables - Swift Playgrounds](https://github.com/MakeSchool-Tutorials/Intro-Variables-Swift-Playground/archive/swift4.zip)
+- [Variables Playground](https://github.com/Tech-at-DU/swift-lab1)
+- [Playground Variables](../../playgrounds/01-variables.md)
+- [Playgrounds Functions](../../playgrounds/02-functions.md)
 
 <!-- > -->
 
@@ -422,8 +424,9 @@ We use -> followed by the type of the return value. Then inside the function we 
 
 ## In Class Activity
 
-- [Variables Playground](https://github.com/MakeSchool-Tutorials/Intro-Variables-Swift-Playground/archive/swift4.zip)
-- [Playground on today's topics.](https://github.com/Make-School-Labs/swift-lab1)
+- [Variables Playground](https://github.com/Tech-at-DU/swift-lab1)
+- [Playground Variables](../../playgrounds/01-variables.md)
+- [Playgrounds Functions](../../playgrounds/02-functions.md)
 
 <!-- > -->
 
