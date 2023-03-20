@@ -22,26 +22,27 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** Wednesday, January 20 – Wednesday, March 3, 2021 (7 weeks)
+**Course Dates:** Tuesday, March 28 – Tuesday, May 9, 2023 (7 weeks)
 
-**Class Times:** Monday, Wednesday at 2:45am–5:30pm (13 class sessions)
+**Class Times:** Tuesday, Thursday at 1:00 PM – 3:45 PM (15 class sessions)
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-| -     | Mon, Jan 18            | **No Class - MLK Day**                  |
-|  1    | Wed, Jan 20            | [Variables, Types & Functions]          |
-|  2    | Mon, Jan 25            | [Optionals & Conditionals]              |
-|  3    | Wed, Jan 27            | [Collection types & Control Flow]       |
-|  4    | Mon, Feb 1             | [Structs & Enums]                       |
-|  5    | Wed, Feb 3             | [SwiftUI Pt.1]                          |
-|  6    | Mon, Feb 8             | [SwiftUI Pt.2]                          |
-|  7    | Wed, Feb 10            | [Classes + OOP]                         |
-|  8    | Mon, Feb 15            | [Intro to UIKit]                        |
-|  9    | Wed, Feb 17            | [POP]                                   |
-| 10    | Mon, Feb 22            | [Closures]                              |
-| 11    | Wed, Feb 24            | [Basic Navigation]                      |
-| 12    | Mon, Mar               | [Debugging & Review]                    |
-| 13    | Wed, Mar 3             | Final Exam/Presentations                |
+|  1    | Tue, Mar 28            | [Variables, Types & Functions]          |
+|  2    | Thr, Mar 30            | [Optionals & Conditionals]              |
+|  3    | Tue, Apr  4            | [Collection types & Control Flow]       |
+|  4    | Thr, Apr  6            | [Structs & Enums]                       |
+|  5    | Tue, Apr 11            | [SwiftUI Pt.1]                          |
+|  6    | Thr, Apr 13            | [SwiftUI Pt.2]                          |
+|  7    | Tue, Apr 18            | [Classes + OOP]                         |
+|  8    | Thr, Apr 20            | [Intro to UIKit]                        |
+|  9    | Tue, Apr 25            | [POP]                                   |
+| 10    | Thr, Apr 25            | [Closures]                              |
+| 11    | Tue, Feb 22            | [Basic Navigation]                      |
+| 12    | Thr, Feb 27            | [Debugging & Review]                    |
+| 13    | Tue, May  2            |                                         |
+| 14    | Thr, May  4            | Final Assessment                        |
+| 15    | Tue, May  9            | Final Presentations                     |
 
 [Variables, Types & Functions]: Lessons/01-Variables-Types-&-Functions/README.md
 [Optionals & Conditionals]: Lessons/02-Optionals-&-Conditionals/README.md

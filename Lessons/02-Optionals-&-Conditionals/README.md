@@ -236,7 +236,7 @@ max = a > b ? a : b
 
 ## In Class Activity
 
-- [Conditionals - Playground](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/02-Optionals-%26-Conditionals/assets/conditionals-fixed.zip)
+- [Conditionals - Playground](assets/conditionals-fixed.zip)
 
 <!-- > -->
 
