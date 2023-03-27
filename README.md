@@ -106,6 +106,10 @@ Students by the end of the course will be able to ...
 | [POP](https://repl.it/classroom/invite/0FruFZO)                  | day, Date | day, Date | Repl.it site & tracker |
 -->
 
+### Video Lectures 
+
+https://www.youtube.com/watch?v=OD4Waw9b4NM&list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr
+
 ### Tutorials
 
 - [Magic 8 ball](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
