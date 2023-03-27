@@ -1,4 +1,4 @@
-# MOB 1.1: Introduction to Swift
+# ACS 1410: Introduction to Swift
 
 ## Course Description
 
