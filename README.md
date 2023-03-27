@@ -28,21 +28,19 @@ Students by the end of the course will be able to ...
 
 | Class |          Date          |                 Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1    | Tue, Mar 28            | [Variables, Types & Functions]          |
-|  2    | Thr, Mar 30            | [Optionals & Conditionals]              |
-|  3    | Tue, Apr  4            | [Collection types & Control Flow]       |
-|  4    | Thr, Apr  6            | [Structs & Enums]                       |
-|  5    | Tue, Apr 11            | [SwiftUI Pt.1]                          |
-|  6    | Thr, Apr 13            | [SwiftUI Pt.2]                          |
-|  7    | Tue, Apr 18            | [Classes + OOP]                         |
-|  8    | Thr, Apr 20            | [Intro to UIKit]                        |
-|  9    | Tue, Apr 25            | [POP]                                   |
-| 10    | Thr, Apr 25            | [Closures]                              |
-| 11    | Tue, Feb 22            | [Basic Navigation]                      |
-| 12    | Thr, Feb 27            | [Debugging & Review]                    |
-| 13    | Tue, May  2            |                                         |
-| 14    | Thr, May  4            | Final Assessment                        |
-| 15    | Tue, May  9            | Final Presentations                     |
+|  1    | Tue, Mar 28 | [Variables, Types & Functions] |
+|  2    | Thr, Mar 30 | [Optionals & Conditionals] |
+|  3    | Tue, Apr  4 | [Collection types & Control Flow] |
+|  4    | Thr, Apr  6 | [Structs & Enums] |
+|  5    | Tue, Apr 11 | [SwiftUI Pt.1]    |
+|  6    | Thr, Apr 13 | [SwiftUI Pt.2]    |
+|  7    | Tue, Apr 18 | [Classes + OOP]   |
+|  8    | Thr, Apr 20 | [Intro to UIKit]  |
+|  9    | Tue, Apr 25 | [POP] [Closures]  |
+| 10    | Thr, Apr 27 | [Basic Navigation] |
+| 11    | Tue, May  2 | [Debugging & Review] |
+| 12    | Thr, May  4 | Final Assessment |
+| 13    | Thr, May  9 | Final Presentations |
 
 [Variables, Types & Functions]: Lessons/01-Variables-Types-&-Functions/README.md
 [Optionals & Conditionals]: Lessons/02-Optionals-&-Conditionals/README.md
@@ -69,16 +67,16 @@ Students by the end of the course will be able to ...
 
 |    Assignment    | Date Assigned |   Due Date   |  Submission Form  |
 |:----------------:|:-------------:|:------------:|:-----------------:|
-| [Lab 1]          | Wed, Jan 20   | Mon, Jan 25  | [Gradescope] |
-| [Lab 2]          | Mon, Jan 25   | Wed, Jan 27  | [Gradescope] |
-| [Lab 3]          | Wed, Jan 27   | Mon, Feb 1   | [Gradescope] |
-| [Lab 4]          | Mon, Feb 1    | Wed, Feb 3   | [Gradescope] |
-| [Calculator App] | Wed, Feb 3    | Wed, Feb 10  | [Gradescope] |
-| [Magic 8 ball]   | Wed, Feb 10   | Wed, Feb 17  | [Gradescope] |
-| [Pop Lab]        | Wed, Feb 17   | Mon, Feb 22  | [Gradescope] |
-| [Final Project]  | Wed, Feb 17   | Wed, Mar 3   | [Gradescope] |
+| [Lab 1]          | Tue, Mar 28   | Thr, Mar  3  | [Gradescope] |
+| [Lab 2]          | Thr, Mar 30   | Tue, Apr  4  | [Gradescope] |
+| [Lab 3]          | Tue, Apr  4   | Thr, Apr  6  | [Gradescope] |
+| [Lab 4]          | Thr, Apr  6   | Tue, Apr 11  | [Gradescope] |
+| [Calculator App] | Tue, Apr 11   | Tue, Apr 18  | [Gradescope] |
+| [Magic 8 ball]   | Tue, Apr 18   | Thr, Apr 20  | [Gradescope] |
+| [Pop Lab]        | Tue, Apr 25   | Thr, Apr 27  | [Gradescope] |
+| [Final Project]  | Thr, Apr 27   | Thr, May  9  | [Gradescope] |
 
-[GradeScope]: https://www.gradescope.com/courses/216934
+[GradeScope]: https://www.gradescope.com/courses/
 
 [Lab 1]: https://github.com/Make-School-Labs/swift-lab1
 [Lab 2]: https://github.com/Make-School-Labs/swift-lab-2
