@@ -78,7 +78,7 @@ Students by the end of the course will be able to ...
 
 [GradeScope]: https://www.gradescope.com/courses/
 
-[Lab 1]: https://github.com/Make-School-Labs/swift-lab1
+[Lab 1]: https://github.com/Tech-at-DU/ACS-1410-Swift-Lab-1
 [Lab 2]: https://github.com/Make-School-Labs/swift-lab-2
 [Lab 3]: https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Lab3.md
 [Lab 4]: https://github.com/Make-School-Labs/swift-lab4
