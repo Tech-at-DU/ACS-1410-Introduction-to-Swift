@@ -80,7 +80,7 @@ Students by the end of the course will be able to ...
 
 [Lab 1]: https://github.com/Make-School-Labs/swift-lab1
 [Lab 2]: https://github.com/Make-School-Labs/swift-lab-2
-[Lab 3]: https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Lab3.md
+[Lab 3]: ./Lessons/03-Arrays-Loops-Dictionaries/assignments/Lab3.md
 [Lab 4]: https://github.com/Make-School-Labs/swift-lab4
 [Calculator app]: Lessons/05-SwiftUI1/README.md
 [Magic 8 ball]: https://github.com/Tech-at-DU/Magic-8Ball-Swift4

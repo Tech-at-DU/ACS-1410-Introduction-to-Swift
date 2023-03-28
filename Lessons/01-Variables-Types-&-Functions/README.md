@@ -9,7 +9,6 @@
 
 [Slides](https://tech-at-du.github.io/ACS-1410-Introduction-to-Swift/Slides/01-Variables-Types-&-Functions/README.html)
 
-
 <!-- > -->
 
 ## Agenda
