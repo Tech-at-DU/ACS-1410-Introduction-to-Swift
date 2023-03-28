@@ -7,7 +7,9 @@
 
 ## [Slides](https://make-school-courses.github.io/MOB-1.1-Introduction-to-Swift/Slides/01-Variables-Types-&-Functions/README.html ':ignore')
 
-[Slides](../../Slides/01-Variables-Types-%26-Functions/README.html)
+[Slides](https://tech-at-du.github.io/
+ACS-1410-Introduction-to-Swift/Slides/01-Variables-Types-&-Functions/README.html)
+
 
 <!-- > -->
 
