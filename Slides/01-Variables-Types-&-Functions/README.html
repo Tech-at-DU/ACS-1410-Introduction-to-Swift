@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>Syllabus Template Slides</title>
-    <link rel="stylesheet" href="./../css/reveal.css" />
-    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
-    <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
-    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+    <link rel="shortcut icon" href="./../favicon.ico" />
+    <link rel="stylesheet" href="./../dist/reset.css" />
+    <link rel="stylesheet" href="./../dist/reveal.css" />
+    <link rel="stylesheet" href="./../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/base16/zenburn.css" />
+
+
 
     <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+      document.write(
+        '<script src="http://' +
+          (location.host || 'localhost').split(':')[0] +
+          ':35729/livereload.js?snipver=1"></' +
+          'script>'
+      );
     </script>
   </head>
   <body>
@@ -25,6 +32,8 @@
 # Variables, Types & Functions
 
 ## [Slides](https://make-school-courses.github.io/MOB-1.1-Introduction-to-Swift/Slides/01-Variables-Types-&-Functions/README.html ':ignore')
+
+[Slides](https://tech-at-du.github.io/ACS-1410-Introduction-to-Swift/Slides/01-Variables-Types-&-Functions/README.html)
 </script></section><section  data-markdown><script type="text/template">
 ## Agenda
 
@@ -161,7 +170,7 @@ Choose names for your variables and constants that reflect what they are. This w
 | username     |     usrnm     |
 | borderColor  |     temp      |
 </script></section><section data-markdown><script type="text/template">
-In Swift is common to use **camel case**.
+In Swift it is common to use **camel case**.
 
 - Start with lower case
 - If the name has more than one word, start the next words with uppercase
@@ -209,7 +218,9 @@ Source: Swift Fundamentals. Apple Books.
 
 In this playground we review the concepts learned so far, experiment using arithmetic operations and also learn about a new type: Strings.
 
-[Variables - Swift Playgrounds](https://github.com/MakeSchool-Tutorials/Intro-Variables-Swift-Playground/archive/swift4.zip)
+- [Variables Playground](https://github.com/Tech-at-DU/swift-lab1)
+- [Playground Variables](../../playgrounds/01-variables.md)
+- [Playgrounds Functions](../../playgrounds/02-functions.md)
 </script></section><section  data-markdown><script type="text/template">
 ## Type Casting
 
@@ -369,7 +380,9 @@ We use -> followed by the type of the return value. Then inside the function we 
 </script></section><section  data-markdown><script type="text/template">
 ## In Class Activity
 
-[Playground on today's topics.](https://github.com/Make-School-Labs/swift-lab1)
+- [Variables Playground](https://github.com/Tech-at-DU/swift-lab1)
+- [Playground Variables](../../playgrounds/01-variables.md)
+- [Playgrounds Functions](../../playgrounds/02-functions.md)
 </script></section><section  data-markdown><script type="text/template">
 ## After Class - Lab
 
@@ -380,12 +393,18 @@ Complete the playground on today's topics if you aren't done yet, submit to Grad
 - [About Swift](https://docs.swift.org/swift-book/index.html)
 - [Apple's documentation on Variables & Constants](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
 - [Video on Types in Swift](https://www.youtube.com/watch?v=BlXrMgmvNBI)
+- [Intro To Swift Playlist](https://www.youtube.com/watch?v=OD4Waw9b4NM&list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr)
 - [Article explaining Functions](https://learnappmaking.com/swift-functions-how-to/)
 </script></section></div>
     </div>
 
-    <script src="./../js/reveal.js"></script>
+    <script src="./../dist/reveal.js"></script>
 
+    <script src="./../plugin/markdown/markdown.js"></script>
+    <script src="./../plugin/highlight/highlight.js"></script>
+    <script src="./../plugin/zoom/zoom.js"></script>
+    <script src="./../plugin/notes/notes.js"></script>
+    <script src="./../plugin/math/math.js"></script>
     <script>
       function extend() {
         var target = {};
@@ -400,16 +419,6 @@ Complete the playground on today's topics if you aren't done yet, submit to Grad
         return target;
       }
 
-      // Optional libraries used to extend on reveal.js
-      var deps = [
-        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: './../plugin/zoom-js/zoom.js', async: true },
-        { src: './../plugin/notes/notes.js', async: true },
-        { src: './../plugin/math/math.js', async: true }
-      ];
-
       // default options to init reveal.js
       var defaultOptions = {
         controls: true,
@@ -417,11 +426,18 @@ Complete the playground on today's topics if you aren't done yet, submit to Grad
         history: true,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
-        dependencies: deps
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
       };
 
       // options from URL query string
-      var queryOptions = Reveal.getQueryHash() || {};
+      var queryOptions = Reveal().getQueryHash() || {};
 
       var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
     </script>

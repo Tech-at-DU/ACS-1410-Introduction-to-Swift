@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>Syllabus Template Slides</title>
-    <link rel="stylesheet" href="./../css/reveal.css" />
-    <link rel="stylesheet" href="./../css/theme/black.css" id="theme" />
-    <link rel="stylesheet" href="./../css/highlight/zenburn.css" />
-    <link rel="stylesheet" href="./../css/print/paper.css" type="text/css" media="print" />
-    <link rel="stylesheet" href="./../assets/Reveal/makeschool.css" />
+    <link rel="shortcut icon" href="./../favicon.ico" />
+    <link rel="stylesheet" href="./../dist/reset.css" />
+    <link rel="stylesheet" href="./../dist/reveal.css" />
+    <link rel="stylesheet" href="./../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./../css/highlight/base16/zenburn.css" />
+
+
 
     <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+      document.write(
+        '<script src="http://' +
+          (location.host || 'localhost').split(':')[0] +
+          ':35729/livereload.js?snipver=1"></' +
+          'script>'
+      );
     </script>
   </head>
   <body>
@@ -148,8 +155,8 @@ Write a `createCoffee` function that takes `beanType`, `sugarLevel`, and `contai
 </script></section><section data-markdown><script type="text/template">
 ### Challenge 2
 
-1. Write a function that given input parameters returns an order type `order`
-2. Then create an order using the function.
+1. Write a function that given input parameters returns an order type `Order` (You'll need to make an `Order` struct!)
+2. Then create an order using the function (this should return an `Order`)
 3. Then print it's details.
 
 This is how I should be able to call your function:
@@ -157,8 +164,6 @@ This is how I should be able to call your function:
 
 and this is what you'll print in the end:
 `Adriana ordered black boba tea, 25% sweetness, with boba`
-
-Note your function should return an `order`. Then construct a print statement based on the `order` struct returned from `createOrder`.
 
 <!--
 ```swift
@@ -477,7 +482,9 @@ Find the solutions to each step of the challenges [here](https://github.com/Make
 1. Political parties <!--correct-->
 1. Addresses
 1. Compass degrees
+
 </script></section><section data-markdown><script type="text/template">
+
 **Q2:** Which of the following would be best represented with an enumeration? _Choose all that apply_
 
 1. Hair colors <!--correct-->
@@ -515,8 +522,13 @@ Find the solutions to each step of the challenges [here](https://github.com/Make
 </script></section></div>
     </div>
 
-    <script src="./../js/reveal.js"></script>
+    <script src="./../dist/reveal.js"></script>
 
+    <script src="./../plugin/markdown/markdown.js"></script>
+    <script src="./../plugin/highlight/highlight.js"></script>
+    <script src="./../plugin/zoom/zoom.js"></script>
+    <script src="./../plugin/notes/notes.js"></script>
+    <script src="./../plugin/math/math.js"></script>
     <script>
       function extend() {
         var target = {};
@@ -531,16 +543,6 @@ Find the solutions to each step of the challenges [here](https://github.com/Make
         return target;
       }
 
-      // Optional libraries used to extend on reveal.js
-      var deps = [
-        { src: './../plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
-        { src: './../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: './../plugin/zoom-js/zoom.js', async: true },
-        { src: './../plugin/notes/notes.js', async: true },
-        { src: './../plugin/math/math.js', async: true }
-      ];
-
       // default options to init reveal.js
       var defaultOptions = {
         controls: true,
@@ -548,11 +550,18 @@ Find the solutions to each step of the challenges [here](https://github.com/Make
         history: true,
         center: true,
         transition: 'default', // none/fade/slide/convex/concave/zoom
-        dependencies: deps
+        slideNumber: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
       };
 
       // options from URL query string
-      var queryOptions = Reveal.getQueryHash() || {};
+      var queryOptions = Reveal().getQueryHash() || {};
 
       var options = extend(defaultOptions, {"controls":true,"progress":true,"autoPlayMedia":false,"slideNumber":"c/t","showSlideNumber":"all","controlsTutorial":true,"controlsLayout":"edges","transition":"slide","transitionSpeed":"medium","minScale":0.5,"maxScale":3}, queryOptions);
     </script>

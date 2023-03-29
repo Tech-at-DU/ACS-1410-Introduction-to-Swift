@@ -85,7 +85,6 @@ Students by the end of the course will be able to ...
 [Calculator app]: Lessons/05-SwiftUI1/README.md
 [Magic 8 ball]: https://github.com/Tech-at-DU/Magic-8Ball-Swift4
 [Final Project]: Assignments/FinalProject.md
-
 [POP Lab]: https://github.com/soggybag/swift-inheritance
 
 <!--
