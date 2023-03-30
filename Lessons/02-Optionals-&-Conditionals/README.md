@@ -528,13 +528,37 @@ calculateResult(a: 4, b: 8, c: nil)
 ## Implicitly Unwrapped Optional
 
 ```swift
-var title : String
+var title: String // Type String
 
-var title: String?
+var title: String? // Optional String
 
-var title: String!
+var title: String! // Implicitly Unwrapped String
 
 ```
+
+<!-- > -->
+
+Use an Implicitly unwrapped optional just like any other variable. 
+
+```Swift 
+var title: String! = "Hello World"
+
+print(title) // No need to unwrap this! 
+```
+
+You don't need to check `title` before it is used! 
+
+<!-- > -->
+
+Why even have an implicitly unwrap optional? 
+
+> Implicitly unwrapped optionals are a compromise between safety and convenience. Whenever you use an implicitly unwrapped optional instead of an optional, you trade safety for convenience. If safety is more important to you, then don't use implicitly unwrapped optionals.
+
+<!-- > -->
+
+You will see Implicitly unwrapped optionals when using Story Board. 
+
+There variables are assigned at compile time. They don't exist when you are writing code but we know they will exist when the code is compiled. 
 
 <!-- > -->
 
