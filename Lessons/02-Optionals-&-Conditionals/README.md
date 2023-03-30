@@ -308,8 +308,10 @@ var fosterDog : String = "Lentil"
 Handling an **optional** - we must handle the nil case
 
 ```swift
+// Sometimes there is a value
 var fosterDog : String? = "Lentil"
-var fosterDog : String? = nil
+// Or the value could be nil
+var fosterDog : String? = nil 
 ```
 
 <!-- > -->
@@ -318,9 +320,8 @@ var fosterDog : String? = nil
 
 ```swift
 var fosterDog: String? = "Lentil"
-print(fosterDog)
-
-Optional("Lentil")
+print(fosterDog) // Optional("Lentil")
+// Optional("Lentil") is not a string
 ```
 
 <aside class = "notes">
@@ -340,7 +341,7 @@ We can force unwrap the value using an exclamation mark.
 
 ```swift
 var fosterDog: String? = "Lentil"
-var unwrappedDog = fosterDog!
+var unwrappedDog = fosterDog! // Force unwrap with !
 print("The dog's name is \(unwrappedDog)")
 
 The dog's name is Lentil
@@ -357,7 +358,7 @@ What happens if we force unwrap the following?
 ```swift
 var fosterDog: String?
 print("The dog's name is \(fosterDog!)")
-
+// Force unwrap inside the string
 ```
 We get this:
 ```swift
@@ -374,6 +375,7 @@ It will produce an error. Since we are trying to force taking out something of t
 
 ```swift
 if fosterDog != nil {
+  // safe to unwrap here!
   print("The dog's name is \(fosterDog!)")
 } else {
   print("Not fostering right now.")
@@ -403,7 +405,6 @@ if let unwrappedDog = fosterDog {
 Optional binding gets rid of the optional type and there's no need to use the exclamation mark to force unwrap. If the optional contains a value, this value is unwrapped and bound to the constant unwrappedDog. The if statement then executes the first block of code, where we can safely use unwrappedDog, now being a non-optional String.
 
 If it's nil then the if statement executes the else block.
-
 </aside>
 
 <!-- v -->
@@ -468,7 +469,7 @@ If the value inside the optional is nil, we give a **default value** called nil-
 ```swift
 <OPTIONAL VALUE> ?? <DEFAULT VALUE>
 
-var dietSelected: String?
+var dietSelected: String? // dietSelected is nil
 var shoppingItem = dietSelected ?? "raw food"
 ```
 
@@ -512,7 +513,7 @@ if height != nil {
 func calculateResult(a: Int?, b: Int?, c: Int?) -> Int {
     guard let aValue = a else { return 0 }
     guard let bValue = b else ( return aValue }
-    guard let cValue = c else {return bValue }
+    guard let cValue = c else { return bValue }
 
     return aValue + bValue + cValue
 }
