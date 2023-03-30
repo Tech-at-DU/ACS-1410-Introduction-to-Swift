@@ -512,7 +512,7 @@ if height != nil {
 ```swift
 func calculateResult(a: Int?, b: Int?, c: Int?) -> Int {
     guard let aValue = a else { return 0 }
-    guard let bValue = b else ( return aValue }
+    guard let bValue = b else { return aValue }
     guard let cValue = c else { return bValue }
 
     return aValue + bValue + cValue

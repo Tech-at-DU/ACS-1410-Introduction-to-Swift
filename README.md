@@ -48,9 +48,11 @@ Students by the end of the course will be able to ...
 [Classes, Structs & Enums]: Lessons/04-Classes-Structs-Enums/README.md
 [Introduction to SpriteKit]: Lessons/05-Introduction-to-SpriteKit/README.md
 [Building an iOS Game]: Lessons/06-Building-an-iOS-Game/README.md
+
 [Building an iOS Game Pt.2]: Lessons/07-Building-an-iOS-Game-Part-2/README.md
 [OOP]: Lessons/08-OOP/README.md
 [Building an RPG Game]: Lessons/09-OOP-in-Games-Structs-&-Protocols/README.md
+
 [More on OOP]: Lessons/10-Build-an-RPG-Game/README.md
 [Intro to UIKit]: Lessons/11-Intro-to-UIKit/README.md
 [Inspecting and Debugging Your Code]: Lessons/13-Inspecting-And-Debugging-Your-Code/README.md
