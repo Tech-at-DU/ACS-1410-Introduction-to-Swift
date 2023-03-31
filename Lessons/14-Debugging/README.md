@@ -4,7 +4,7 @@
 <!-- .slide: class="header" -->
 # Inspecting and Debugging Your Code
 
-## [Slides](https://make-school-courses.github.io/MOB-1.1-Introduction-to-Swift/Slides/14-Debugging/README.html ':ignore')
+## [Slides](https://tech-at-du.github.io/ACS-1410-Introduction-to-Swift/Slides/14-Debugging/README.html ':ignore')
 
 <!-- > -->
 

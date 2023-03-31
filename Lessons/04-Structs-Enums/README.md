@@ -4,7 +4,7 @@
 <!-- .slide: class="header" -->
 # Structs & Enums
 
-## [Slides](https://make-school-courses.github.io/MOB-1.1-Introduction-to-Swift/Slides/04-Classes-Structs-Enums/README.html ':ignore')
+## [Slides](https://tech-at-du.github.io/ACS-1410-Introduction-to-Swift/Slides/04-Classes-Structs-Enums/README.html ':ignore')
 
 <!-- > -->
 

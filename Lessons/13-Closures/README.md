@@ -4,7 +4,7 @@
 <!-- .slide: class="header" -->
 # Closures
 
-## [Slides](https://make-school-courses.github.io/MOB-1.1-Introduction-to-Swift/Slides/13-Closures/README.html ':ignore')
+## [Slides](https://tech-at-du.github.io/ACS-1410-Introduction-to-Swift/Slides/13-Closures/README.html ':ignore')
 
 <!-- > -->
 

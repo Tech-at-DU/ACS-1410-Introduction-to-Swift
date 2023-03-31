@@ -4,7 +4,7 @@
 <!-- .slide: class="header" -->
 # Building an iOS game
 
-## [Slides](https://make-school-courses.github.io/MOB-1.1-Introduction-to-Swift/Slides/06-Building-an-iOS-Game/README.html ':ignore')
+## [Slides](https://tech-at-du.github.io/ACS-1410-Introduction-to-Swift/Slides/06-Building-an-iOS-Game/README.html ':ignore')
 
 <!-- > -->
 
