@@ -52,7 +52,7 @@ Xcode is an Integrated Development Environment (IDE) developed by Apple for deve
 - Provides a base app with functionality to start working with.
 - Main components: **Scenes**, **View Controllers** and **Views**.
 
-<!-- v -->
+<!-- > -->
 
 “This framework lets apps achieve a **consistent appearance** across the system, while at the same time offering a high level of **customization**. UIKit elements are **flexible** and **familiar**. They’re adaptable, enabling you to design a single app that looks great on any iOS device, and they **automatically update when the system introduces appearance changes.**”
 
@@ -64,7 +64,7 @@ Every app is made up of scenes and transitions between scenes.
 
 ![scenes](assets/scenes.png)
 
-<!-- v -->
+<!-- > -->
 
 The first thing we need to do when creating a new app is to think:
 
@@ -106,7 +106,7 @@ UIKit provides subclasses that represent components:
   - textfields
   - date pickers ...
 
-<!-- v -->
+<!-- > -->
 
 ### View lifecycle
 
@@ -114,7 +114,7 @@ Views have different stages: when they are created, shown, disappear and destroy
 
 For every one of these stages, the View Controller associated with the view will receive an event that we can handle.
 
-<!-- v -->
+<!-- > -->
 
 `ViewDidLoad`
 
@@ -122,7 +122,7 @@ Called as soon as the view is loaded for the first time.
 
 We can initialize properties here.
 
-<!-- v -->
+<!-- > -->
 
 `ViewWillAppear`/ `ViewDidAppear`
 
@@ -132,11 +132,24 @@ The importance to differentiate them is if we are using animations to present vi
 
 **Good place to load data.**
 
-<!-- v -->
+<!-- > -->
 
 `ViewWillDisappear`/ `ViewDidDisappear`
 
 Good place to save data, clean up resources,
+
+<!-- > -->
+
+## IBOutlets and IBActions
+
+Once you've built your interaface with storyboard you will have interactive elements that need to be connected to code. This is done via IBoutlets and IBActions. 
+
+Imagine you have have a simple app with a button and a text label. Clicking the button will display a text message in the text label. To do this you need an IBoutlet for the text label and an IBAction for the button. 
+
+- IBOutlets are references to objects in your UI. They allow you to set properties on those objects. 
+- IBActions are event listeners attached to a UI element. They invoke callback functions. 
+
+Hold the control key and drag from an element in storyboard to your view controller swift file to create IBActions and IBOutlets. 
 
 <!-- > -->
 
@@ -157,7 +170,7 @@ Let's say we want to turn the "Hotel management" program into a real app.
 
 3. Draw the transitions between scenes. How do I get to each scene?
 
-<!-- v -->
+<!-- > -->
 
 Share in pairs your designs.
 
@@ -165,23 +178,17 @@ Share in pairs your designs.
 - Major differences?
 - Give each other feedback on what might be a better practice.
 
-<!-- v -->
+<!-- > -->
 
 ## Demo Building a screen with storyboards
 
 Instructor takes a screen design and replicates it in the storyboard.
 
-<!-- v -->
+<!-- > -->
 
 ## MVC
 
 ![mvc](assets/mvc.png)
-
-<!-- > -->
-
-## MVC for SwiftUI?
-
-Whiteboard
 
 <!-- > -->
 
@@ -191,7 +198,7 @@ Auto Layout **dynamically calculates** the size and position of all the views in
 
 This constraint-based approach to design allows you to build user interfaces that dynamically respond to both internal and external changes.
 
-<!-- v -->
+<!-- > -->
 
 ### External changes
 Occur when the size or shape of your superview changes. And we must update the layout of the view hierarchy to best use the available space.
@@ -201,7 +208,7 @@ Occur when the size or shape of your superview changes. And we must update the l
 - We want to support different orientations
 - We want to support different screen sizes
 
-<!-- v -->
+<!-- > -->
 
 ### Internal changes
 
@@ -211,24 +218,24 @@ Occur when the size of the views or controls in the user interface change.
 - The app supports internationalization
 - The app supports Dynamic Type
 
-<!-- v -->
+<!-- > -->
 
 ![difference](assets/framevsconstraint.png)
 
-<!-- v -->
+<!-- > -->
 
 ## Magic 8 Ball 🎱
 
-Complete [Magic 8 Ball tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
+Complete [Magic 8 Ball tutorial](https://github.com/Tech-at-DU/Magic-8Ball-Swift4)
 
 <!-- > -->
 
 ## After class - Lab
 
-- You have until Monday to submit the Magic 8 ball tutorial
-- Final Project Kick off
+- Complete the magic 8 Ball tutorial. Why? This will show you the basics of building user interfaces with UIKit. 
+- Watch the video lectures here: https://www.youtube.com/playlist?list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr
 
-<!-- v -->
+<!-- > -->
 
 ## Additional Resources
 

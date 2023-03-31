@@ -30,12 +30,12 @@ Students by the end of the course will be able to ...
 |:-----:|:----------------------:|:---------------------------------------:|
 |  1    | Tue, Mar 28 | [Variables, Types & Functions] |
 |  2    | Thr, Mar 30 | [Optionals & Conditionals] |
-|  3    | Tue, Apr  4 | [Collection types & Control Flow] |
+|  3    | Tue, Apr  4 | [Intro to UIKit] |
 |  4    | Thr, Apr  6 | [Structs & Enums] |
 |  5    | Tue, Apr 11 | [SwiftUI Pt.1]    |
 |  6    | Thr, Apr 13 | [SwiftUI Pt.2]    |
 |  7    | Tue, Apr 18 | [Classes + OOP]   |
-|  8    | Thr, Apr 20 | [Intro to UIKit]  |
+|  8    | Thr, Apr 20 | [Collection types & Control Flow] |
 |  9    | Tue, Apr 25 | [POP] [Closures]  |
 | 10    | Thr, Apr 27 | [Basic Navigation] |
 | 11    | Tue, May  2 | [Debugging & Review] |
@@ -71,10 +71,10 @@ Students by the end of the course will be able to ...
 |:----------------:|:-------------:|:------------:|:-----------------:|
 | [Lab 1]          | Tue, Mar 28   | Thr, Mar  3  | [Gradescope] |
 | [Lab 2]          | Thr, Mar 30   | Tue, Apr  4  | [Gradescope] |
-| [Lab 3]          | Tue, Apr  4   | Thr, Apr  6  | [Gradescope] |
-| [Lab 4]          | Thr, Apr  6   | Tue, Apr 11  | [Gradescope] |
+| [Magic 8 ball]   | Tue, Apr  4   | Thr, Apr  6  | [Gradescope] |
+| [Tip Calculator] | Thr, Apr  6   | Tue, Apr 11  | [Gradescope] |
 | [Calculator App] | Tue, Apr 11   | Tue, Apr 18  | [Gradescope] |
-| [Magic 8 ball]   | Tue, Apr 18   | Thr, Apr 20  | [Gradescope] |
+| [Lab 3]          | Tue, Apr 18   | Thr, Apr 20  | [Gradescope] |
 | [Pop Lab]        | Tue, Apr 25   | Thr, Apr 27  | [Gradescope] |
 | [Final Project]  | Thr, Apr 27   | Thr, May  9  | [Gradescope] |
 
@@ -86,6 +86,8 @@ Students by the end of the course will be able to ...
 [Lab 4]: https://github.com/Tech-at-DU/ACS-1410-Swift-Lab-4
 [Calculator app]: Lessons/05-SwiftUI1/README.md
 [Magic 8 ball]: https://github.com/Tech-at-DU/Magic-8Ball-Swift4
+[Tip Calculator]: https://github.com/Tech-at-DU/Tip-Calculator-Swift
+[Habitual App]: https://github.com/Tech-at-DU/Habitual-Swift4
 [Final Project]: Assignments/FinalProject.md
 [POP Lab]: https://github.com/soggybag/swift-inheritance
 
