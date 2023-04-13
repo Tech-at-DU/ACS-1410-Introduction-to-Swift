@@ -305,8 +305,6 @@ class BandMember: Person {
 
 ## Hotel activity
 
-[Instructions](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/08-OOP/hotel.md)
-
 [Instructions](./hotel.md)
 
 <!-- > -->
