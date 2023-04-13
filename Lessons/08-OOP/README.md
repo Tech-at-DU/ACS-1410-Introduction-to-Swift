@@ -1,8 +1,6 @@
 <!-- Run this slideshow via the following command: -->
 <!-- reveal-md README.md -w -->
-
 <!-- .slide: class="header" -->
-
 <!--TODO: Type Casting-->
 
 # Object Oriented Programming with Swift
@@ -308,6 +306,8 @@ class BandMember: Person {
 ## Hotel activity
 
 [Instructions](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/08-OOP/hotel.md)
+
+[Instructions](./hotel.md)
 
 <!-- > -->
 
