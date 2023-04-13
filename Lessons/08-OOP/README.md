@@ -401,7 +401,6 @@ OOP in iOS development:
 - [OOP Lab - Optional](https://github.com/MakeSchool-Tutorials/Intro-Object-Oriented-Programming-Playground/archive/master.zip)
 - Look up what are static properties
 - Loo up Type Casting for `Any` and `AnyObject`
-- Begin [Magic 8 ball tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
 
 <!-- > -->
 
