@@ -33,9 +33,9 @@ Students by the end of the course will be able to ...
 |  3    | Tue, Apr  4 | [Intro to UIKit]               | [Basic Navigation]   |
 |  4    | Thr, Apr  6 | Constraints                    | [Tip Calculator]  |
 |  5    | Tue, Apr 11 | [Structs & Enums]              | |
-|  6    | Thr, Apr 13 | [SwiftUI Pt.1]                | [Calculator App] |
-|  7    | Tue, Apr 18 | [SwiftUI Pt.2] | |
-|  8    | Thr, Apr 20 | [Classes + OOP]                | [Final Project] |
+|  6    | Thr, Apr 13 | [Classes + OOP]                | |
+|  7    | Tue, Apr 18 | [SwiftUI Pt.1] | [Calculator App] |
+|  8    | Thr, Apr 20 | [SwiftUI Pt.2]                | [Final Project] |
 |  9    | Tue, Apr 25 | [Collection types & Control Flow] | |
 | 10    | Thr, Apr 27 | [Basic Navigation]             | |
 | 11    | Tue, May  2 | [POP] [Closures]               | |
