@@ -62,29 +62,29 @@ iOS is the mobile operating system created by Apple Inc. It runs on iPhone, iPad
 
 Xcode is an Integrated Development Environment (IDE) developed by Apple for developing software for macOS, iOS, tvOS & watchOS.
 </aside>
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## What is UIKit?
 
 - The core framework that helps us build iOS apps.
 - Has default core components (buttons, sliders, image views). Same look and feel.
 - Provides a base app with functionality to start working with.
 - Main components: **Scenes**, **View Controllers** and **Views**.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 “This framework lets apps achieve a **consistent appearance** across the system, while at the same time offering a high level of **customization**. UIKit elements are **flexible** and **familiar**. They’re adaptable, enabling you to design a single app that looks great on any iOS device, and they **automatically update when the system introduces appearance changes.**”
-</script></section></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## How an app is made
 
 Every app is made up of scenes and transitions between scenes.
 
 ![scenes](assets/scenes.png)
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 The first thing we need to do when creating a new app is to think:
 
 - What can the app do?
 - Where are things happening, in what scenes?
 - How many scenes do we need?
 - What are the possible transitions between scenes?
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 **Scenes**
 
 Scenes consist of *View Controllers* and *Views*.
@@ -100,7 +100,7 @@ In most cases: one scene will have one view controller.
 - View controllers are not something we can see, they need a view at least.
 - Manage views
 - Get informed about different system events (rotating, view appeared/disappeared)
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 **Views**
 
 Anything that displays in the screen is a view.
@@ -111,19 +111,19 @@ UIKit provides subclasses that represent components:
   - buttons
   - textfields
   - date pickers ...
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### View lifecycle
 
 Views have different stages: when they are created, shown, disappear and destroyed.
 
 For every one of these stages, the View Controller associated with the view will receive an event that we can handle.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 `ViewDidLoad`
 
 Called as soon as the view is loaded for the first time.
 
 We can initialize properties here.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 `ViewWillAppear`/ `ViewDidAppear`
 
 As soon as the view appears on screen.
@@ -131,15 +131,26 @@ As soon as the view appears on screen.
 The importance to differentiate them is if we are using animations to present views.
 
 **Good place to load data.**
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 `ViewWillDisappear`/ `ViewDidDisappear`
 
 Good place to save data, clean up resources,
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
+## IBOutlets and IBActions
+
+Once you've built your interaface with storyboard you will have interactive elements that need to be connected to code. This is done via IBoutlets and IBActions. 
+
+Imagine you have have a simple app with a button and a text label. Clicking the button will display a text message in the text label. To do this you need an IBoutlet for the text label and an IBAction for the button. 
+
+- IBOutlets are references to objects in your UI. They allow you to set properties on those objects. 
+- IBActions are event listeners attached to a UI element. They invoke callback functions. 
+
+Hold the control key and drag from an element in storyboard to your view controller swift file to create IBActions and IBOutlets. 
+</script></section><section  data-markdown><script type="text/template">
 ## Interface essentials
 
 [Apple Docs](https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/)
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Building a wireframe
 
 Let's say we want to turn the "Hotel management" program into a real app.
@@ -150,31 +161,27 @@ Let's say we want to turn the "Hotel management" program into a real app.
     - every element must be a native component of UIKit. Refer to the [Interface Essentials](https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/) You should be able to name every element in your scenes.
 
 3. Draw the transitions between scenes. How do I get to each scene?
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 Share in pairs your designs.
 
 - Any similar components?
 - Major differences?
 - Give each other feedback on what might be a better practice.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Demo Building a screen with storyboards
 
 Instructor takes a screen design and replicates it in the storyboard.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## MVC
 
 ![mvc](assets/mvc.png)
-</script></section></section><section  data-markdown><script type="text/template">
-## MVC for SwiftUI?
-
-Whiteboard
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Autolayout
 
 Auto Layout **dynamically calculates** the size and position of all the views in the view hierarchy, **based on constraints** placed on those views.
 
 This constraint-based approach to design allows you to build user interfaces that dynamically respond to both internal and external changes.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### External changes
 Occur when the size or shape of your superview changes. And we must update the layout of the view hierarchy to best use the available space.
 
@@ -182,7 +189,7 @@ Occur when the size or shape of your superview changes. And we must update the l
 - The device rotates
 - We want to support different orientations
 - We want to support different screen sizes
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### Internal changes
 
 Occur when the size of the views or controls in the user interface change.
@@ -190,23 +197,23 @@ Occur when the size of the views or controls in the user interface change.
 - The content displayed by the app changes
 - The app supports internationalization
 - The app supports Dynamic Type
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ![difference](assets/framevsconstraint.png)
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Magic 8 Ball 🎱
 
-Complete [Magic 8 Ball tutorial](https://www.makeschool.com/academy/track/learn-how-to-build-apps--magic-8-ball)
-</script></section></section><section ><section data-markdown><script type="text/template">
+Complete [Magic 8 Ball tutorial](https://github.com/Tech-at-DU/Magic-8Ball-Swift4)
+</script></section><section  data-markdown><script type="text/template">
 ## After class - Lab
 
-- You have until Monday to submit the Magic 8 ball tutorial
-- Final Project Kick off
-</script></section><section data-markdown><script type="text/template">
+- Complete the magic 8 Ball tutorial. Why? This will show you the basics of building user interfaces with UIKit. 
+- Watch the video lectures here: https://www.youtube.com/playlist?list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr
+</script></section><section  data-markdown><script type="text/template">
 ## Additional Resources
 
 [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/)
 [UIKit inheritance video](https://www.youtube.com/watch?v=DFsENma-PAk)
-</script></section></section></div>
+</script></section></div>
     </div>
 
     <script src="./../dist/reveal.js"></script>

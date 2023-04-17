@@ -51,7 +51,7 @@ By the end of this lesson, students should be able to:
 - **Create** Dictionaries to store collections of data
 - **Differentiate** & use the various types of loops in Swift
 - **Apply** Optionals in creating and using different collection types
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Arrays
 
 The most common collection type in Swift.
@@ -59,7 +59,7 @@ The most common collection type in Swift.
 Collections are containers that let us store multiple values together.
 
 Arrays store multiple values **of the same type** in a list.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 An **ordered** collection of values **of the same type**
 
 Arrays are **zero-indexed**.
@@ -73,7 +73,7 @@ The last element has an index equal to the number of values in the array minus o
 
 In the example above, there are 4 elements of type String. Their indices go from 0 to 3.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### Creating an array
 
 Using an **array literal**
@@ -89,7 +89,7 @@ An array literal is a list of values separated by commas, inside square brackets
 
 The type inside the square brackets tell us the type of values the array can store.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### Creating an empty array
 
 `var concentrations = []`
@@ -105,7 +105,7 @@ Here's two ways to do it.
 `var concentrations : [String] = []`
 
 `var concentrations = [String]()`
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Appending elements
 
 We can add elements to an array using different methods:
@@ -122,7 +122,7 @@ The append method will add the new element at the end of the array.
 
 The insert method lets us define the position in the array where we want the new element.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Removing elements
 
 There are several alternatives to remove elements.
@@ -135,7 +135,7 @@ concentrations.remove(at:4)
 <aside class="notes">
 Both methods will do two things, they will remove the element while also returning it in case you need to store it and use it.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Updating elements
 
 There are several alternatives to remove elements.
@@ -149,7 +149,7 @@ Here we use the subscript syntax to update the content.
 
 Important: Be sure to NOT use an index that goes beyond the bounds of the array. Or else the program will crash.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Swapping
 
 ```swift
@@ -159,7 +159,7 @@ concentrations.swap(1,2)
 <aside class="notes">
 The swap method lets us exchange the position of two elements.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Sorting
 
 ```swift
@@ -171,13 +171,13 @@ The sort method will order the elements in the array.
 
 The sorted method will return a sorted copy of the array.
 </aside>
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### Practice Problems
 
 Complete [these practice problems](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Arrays.md) in a playground.
 
 [Download the playground here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Class-3.playground.zip)
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 <!--
 
 ## Challenge
@@ -263,7 +263,7 @@ All keys have to be of the same type and all values have to be of the same type.
 
 Dictionaries are useful when when want to look up values given an identifier. Just like looking up words in a dictionary.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Creating a dictionary
 
 Using a **dictionary literal**.
@@ -277,13 +277,13 @@ The type is `[String:Int]`
 <aside class="notes">
 A list of key-value pairs separated by commas inside square brackets.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Creating an empty dictionary
 
 ```swift
 var coursesAndStudents : [String:Int] = [:]
 ```
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Accessing values in a dictionary
 
 We can use subscripting just like in arrays. But since elements are not ordered, instead of looking for an index, we look for a key.
@@ -297,7 +297,7 @@ Why are we using force unwrapping?
 <aside class="notes">
 The return type is an optional. Meaning the dictionary will first check if there is a value with the key provided. If there is it will return the value, nil otherwise.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Adding to and Updating a dictionary
 
 ```swift
@@ -308,7 +308,7 @@ coursesAndStudents["ROB"] = 15
 <aside class="notes">
 These both serve as a way to add a new pair and also to update an existing pair. The code will update the value for the key given or create a new pair if it can't find it.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Removing elements
 
 ```swift
@@ -381,7 +381,7 @@ printStudentcount(dictionary: coursesAndStudents)
 ```
 
 -->
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Sets
 
 An **unordered** collection of **unique** values of the same type.
@@ -394,7 +394,7 @@ let plantCollection = Set(["Pothos", "Monstera", "Calathea"])
 <aside class="notes">
 The first option uses a type annotation while the second one let's the compiler infer the type.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ```swift
 let plantCollection: Set<String> = ["Pothos", "Monstera", "Calathea", "Pothos"]
 
@@ -406,13 +406,13 @@ What will be the result in the console?
 <aside class="notes">
 The result will be an unordered list and it will also show unique values. So even if we added the same plant twice, the set will make sure all the elements are unique.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Finding elements in a Set
 
 ```swift
 print(plantCollection.contains("Monstera"))
 ```
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Adding and removing elements
 
 ```swift
@@ -421,13 +421,13 @@ plantCollection.insert("Ficus")
 let removedPlant = plantCollection.remove("Calathea")
 ```
 
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ### Practice Problems
 
 Complete [these practice problems](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Dictionaries.md) in a playground.
 
 [Download the playground here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Class-3.1.playground.zip)
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 
 ## In Class Activity
 
@@ -436,13 +436,13 @@ Individually answer:
 - When would you use a Dictionary vs an Array? Are there advantages/disadvantages when using each?
 - When would you use a Set vs an Array? Are there advantages/disadvantages when using each?
 - Is type annotation better than type inference?
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 Discuss your answers with a neighbor.
 
 - Do you share the same answers?
 - Any disagreements?
 - A question you both have for the instructor? Raise your hand to get help.
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="#087CB8" -->
 
 ## [**10m**] BREAK
@@ -458,7 +458,7 @@ while <CONDITION> {
 ```
 
 The loop checks the condition for every iteration. When the condition is false, it will stop.
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## repeat-while loops
 
 ```swift
@@ -468,7 +468,7 @@ repeat {
 ```
 
 The condition is evaluated at the end of the loop.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ```swift
 var result = 0
 
@@ -488,7 +488,7 @@ repeat{
 <aside class="notes">
 What will be the result in each loop?
 </aside
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ```swift
 var result = 0
 
@@ -501,7 +501,7 @@ while true{
 ```
 
 We can end the loop using the `break` statement. It will stop the execution of the loop and continue with the code after the loop.
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Countable ranges
 
 `let closedRange = 0...8`
@@ -512,7 +512,7 @@ Goes from 0 to 8 inclusive.
 `let halfOpenRange = 0..<8`
 
 Goes from 0 up to, but not including 8.
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## For loop
 
 ```swift
@@ -535,7 +535,7 @@ When working with loops that update the value of a variable it is useful to do a
 
 Its important to notice that the constant i is only visible inside the scope of the for loop.
 </aside>
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 Sometimes we don't need the loop constant, we just want to run a block of code certain number of times.
 
 ```swift
@@ -543,7 +543,7 @@ for _ in 0..count{
   // code that will loop
 }
 ```
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ```swift
 var result = 0
 for i in 1...10 where i % 2 == 1 {
@@ -552,7 +552,7 @@ for i in 1...10 where i % 2 == 1 {
 ```
 
 This for loop has a where clause. It will loop through all of the values in the range but will only execute the block then the where condition is true.
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 Looping items in an array
 
 ```swift
@@ -602,7 +602,7 @@ for course in coursesAndStudents{
 ```
 
 -->
-</script></section></section><section  data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 ## Lab Practice Problems
 
 Complete [these practice problems](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Lab3.md) in a playground.
