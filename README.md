@@ -28,19 +28,19 @@ Students by the end of the course will be able to ...
 
 | Class |          Date          |                 Topics                  | Homework |
 |:-----:|:----------------------:|:---------------------------------------:|:--------:|
-|  1    | Tue, Mar 28 | [Variables, Types & Functions] | [Lab 1] |
-|  2    | Thr, Mar 30 | [Optionals & Conditionals]     | [Lab 2] |
-|  3    | Tue, Apr  4 | [Intro to UIKit]               | [Basic Navigation]   |
-|  4    | Thr, Apr  6 | Constraints                    | [Tip Calculator]  |
-|  5    | Tue, Apr 11 | [Structs & Enums]              | |
-|  6    | Thr, Apr 13 | [Classes + OOP]                | |
-|  7    | Tue, Apr 18 | [SwiftUI Pt.1]                 | [Calculator App] |
-|  8    | Thr, Apr 20 | [SwiftUI Pt.2]                 | [Final Project] |
-|  9    | Tue, Apr 25 | [Collection types & Control Flow] | |
-| 10    | Thr, Apr 27 | [Basic Navigation]             | |
-| 11    | Tue, May  2 | [POP] [Closures]               | |
-| 12    | Thr, May  4 | Final Assessment               | |
-| 13    | Thr, May  9 | Final Presentations            | |
+|  1    | Tue, Mar 28 | [Variables, Types & Functions] | [Lab 1]            |
+|  2    | Thr, Mar 30 | [Optionals & Conditionals]     | [Lab 2]            |
+|  3    | Tue, Apr  4 | [Intro to UIKit]               | [Basic Navigation] |
+|  4    | Thr, Apr  6 | Constraints                    | [Tip Calculator]   |
+|  5    | Tue, Apr 11 | [Structs & Enums]              |                    |
+|  6    | Thr, Apr 13 | [Classes + OOP]                |                    |
+|  7    | Tue, Apr 18 | [Collection types & Control Flow] | [Final Project] |
+|  8    | Thr, Apr 20 | [SwiftUI Pt.1]                 | [Calculator App]   |
+|  9    | Tue, Apr 25 | [SwiftUI Pt.2]                 |                    |
+| 10    | Thr, Apr 27 | [Basic Navigation]             |                    |
+| 11    | Tue, May  2 | [POP] [Closures]               |                    |
+| 12    | Thr, May  4 | Final Assessment               |                    |
+| 13    | Thr, May  9 | Final Presentations            |                    |
 
 [Variables, Types & Functions]: Lessons/01-Variables-Types-&-Functions/README.md
 [Optionals & Conditionals]: Lessons/02-Optionals-&-Conditionals/README.md
