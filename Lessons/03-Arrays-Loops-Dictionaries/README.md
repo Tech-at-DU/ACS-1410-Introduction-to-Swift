@@ -40,7 +40,7 @@ Collections are containers that let us store multiple values together.
 
 Arrays store multiple values **of the same type** in a list.
 
-<!-- v -->
+<!-- > -->
 
 An **ordered** collection of values **of the same type**
 
@@ -56,7 +56,7 @@ The last element has an index equal to the number of values in the array minus o
 In the example above, there are 4 elements of type String. Their indices go from 0 to 3.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ### Creating an array
 
@@ -74,7 +74,7 @@ An array literal is a list of values separated by commas, inside square brackets
 The type inside the square brackets tell us the type of values the array can store.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ### Creating an empty array
 
@@ -92,7 +92,7 @@ Here's two ways to do it.
 
 `var concentrations = [String]()`
 
-<!-- v -->
+<!-- > -->
 
 ## Appending elements
 
@@ -111,7 +111,7 @@ The append method will add the new element at the end of the array.
 The insert method lets us define the position in the array where we want the new element.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Removing elements
 
@@ -126,7 +126,7 @@ concentrations.remove(at:4)
 Both methods will do two things, they will remove the element while also returning it in case you need to store it and use it.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Updating elements
 
@@ -142,7 +142,7 @@ Here we use the subscript syntax to update the content.
 Important: Be sure to NOT use an index that goes beyond the bounds of the array. Or else the program will crash.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Swapping
 
@@ -154,7 +154,7 @@ concentrations.swap(1,2)
 The swap method lets us exchange the position of two elements.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Sorting
 
@@ -264,7 +264,7 @@ All keys have to be of the same type and all values have to be of the same type.
 Dictionaries are useful when when want to look up values given an identifier. Just like looking up words in a dictionary.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Creating a dictionary
 
@@ -280,7 +280,7 @@ The type is `[String:Int]`
 A list of key-value pairs separated by commas inside square brackets.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Creating an empty dictionary
 
@@ -288,7 +288,7 @@ A list of key-value pairs separated by commas inside square brackets.
 var coursesAndStudents : [String:Int] = [:]
 ```
 
-<!-- v -->
+<!-- > -->
 
 ## Accessing values in a dictionary
 
@@ -304,7 +304,7 @@ Why are we using force unwrapping?
 The return type is an optional. Meaning the dictionary will first check if there is a value with the key provided. If there is it will return the value, nil otherwise.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Adding to and Updating a dictionary
 
@@ -317,7 +317,7 @@ coursesAndStudents["ROB"] = 15
 These both serve as a way to add a new pair and also to update an existing pair. The code will update the value for the key given or create a new pair if it can't find it.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Removing elements
 
@@ -392,7 +392,7 @@ printStudentcount(dictionary: coursesAndStudents)
 
 -->
 
-<!-- v -->
+<!-- > -->
 
 ## Sets
 
@@ -407,7 +407,7 @@ let plantCollection = Set(["Pothos", "Monstera", "Calathea"])
 The first option uses a type annotation while the second one let's the compiler infer the type.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ```swift
 let plantCollection: Set<String> = ["Pothos", "Monstera", "Calathea", "Pothos"]
@@ -421,7 +421,7 @@ What will be the result in the console?
 The result will be an unordered list and it will also show unique values. So even if we added the same plant twice, the set will make sure all the elements are unique.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 ## Finding elements in a Set
 
@@ -429,7 +429,7 @@ The result will be an unordered list and it will also show unique values. So eve
 print(plantCollection.contains("Monstera"))
 ```
 
-<!-- v -->
+<!-- > -->
 
 ## Adding and removing elements
 
@@ -459,7 +459,7 @@ Individually answer:
 - When would you use a Set vs an Array? Are there advantages/disadvantages when using each?
 - Is type annotation better than type inference?
 
-<!-- v -->
+<!-- > -->
 
 Discuss your answers with a neighbor.
 
@@ -501,7 +501,7 @@ repeat {
 
 The condition is evaluated at the end of the loop.
 
-<!-- v -->
+<!-- > -->
 
 ```swift
 var result = 0
@@ -523,7 +523,7 @@ repeat{
 What will be the result in each loop?
 </aside
 
-<!-- v -->
+<!-- > -->
 
 ```swift
 var result = 0
@@ -576,7 +576,7 @@ When working with loops that update the value of a variable it is useful to do a
 Its important to notice that the constant i is only visible inside the scope of the for loop.
 </aside>
 
-<!-- v -->
+<!-- > -->
 
 Sometimes we don't need the loop constant, we just want to run a block of code certain number of times.
 
@@ -586,7 +586,7 @@ for _ in 0..count{
 }
 ```
 
-<!-- v -->
+<!-- > -->
 
 ```swift
 var result = 0
@@ -597,7 +597,7 @@ for i in 1...10 where i % 2 == 1 {
 
 This for loop has a where clause. It will loop through all of the values in the range but will only execute the block then the where condition is true.
 
-<!-- v -->
+<!-- > -->
 
 Looping items in an array
 
