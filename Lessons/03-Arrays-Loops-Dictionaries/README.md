@@ -48,13 +48,11 @@ Arrays are **zero-indexed**.
 
 ![array](assets/array.png)
 
-<aside class="notes">
 Zero-indexed means the index of the first element is always 0, the second is 1, third is 2 and so on.
 
 The last element has an index equal to the number of values in the array minus one.
 
 In the example above, there are 4 elements of type String. Their indices go from 0 to 3.
-</aside>
 
 <!-- > -->
 
@@ -68,11 +66,9 @@ let concentrations = ["MOB", "BEW", "FEW", "DS"]
 
 The type is `[String]`
 
-<aside class="notes">
 An array literal is a list of values separated by commas, inside square brackets.
 
 The type inside the square brackets tell us the type of values the array can store.
-</aside>
 
 <!-- > -->
 
@@ -103,13 +99,12 @@ concentrations.append("ROB")
 concentrations += ["ROB"]
 concentrations.insert("ROB", at: 2)
 ```
-<aside class="notes">
+
 The append method will add the new element at the end of the array.
 
 += operator will also add it at the end.
 
 The insert method lets us define the position in the array where we want the new element.
-</aside>
 
 <!-- > -->
 
@@ -122,9 +117,7 @@ concentrations.removeLast()
 concentrations.remove(at:4)
 ```
 
-<aside class="notes">
 Both methods will do two things, they will remove the element while also returning it in case you need to store it and use it.
-</aside>
 
 <!-- > -->
 
@@ -136,11 +129,9 @@ There are several alternatives to remove elements.
 concentrations[0] = "MOBILE"
 ```
 
-<aside class="notes">
 Here we use the subscript syntax to update the content.
 
 Important: Be sure to NOT use an index that goes beyond the bounds of the array. Or else the program will crash.
-</aside>
 
 <!-- > -->
 
@@ -150,9 +141,7 @@ Important: Be sure to NOT use an index that goes beyond the bounds of the array.
 concentrations.swap(1,2)
 ```
 
-<aside class="notes">
 The swap method lets us exchange the position of two elements.
-</aside>
 
 <!-- > -->
 
@@ -162,19 +151,19 @@ The swap method lets us exchange the position of two elements.
 concentrations.sort()
 concentrations.sorted()
 ```
-<aside class="notes">
+
 The sort method will order the elements in the array.
 
-The sorted method will return a sorted copy of the array.
-</aside>
+The sorted method will return a sorted _copy_ of the array.
 
 <!-- > -->
 
 ### Practice Problems
 
-Complete [these practice problems](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Arrays.md) in a playground.
+Complete [these practice problems](./assignments/Arrays.md) in a playground.
 
-[Download the playground here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/03-Arrays-Loops-Dictionaries/assignments/Class-3.playground.zip)
+[Download the playground here](./assignments/Class-3.playground.zip)
+
 
 <!-- > -->
 
@@ -256,13 +245,11 @@ Each pair has a **key** and a **value**.
 
 ![dictionary](assets/dictionary.png)
 
-<aside class="notes">
 Keys are unique, they can't appear more than once in a dictionary.
 
 All keys have to be of the same type and all values have to be of the same type.
 
 Dictionaries are useful when when want to look up values given an identifier. Just like looking up words in a dictionary.
-</aside>
 
 <!-- > -->
 
@@ -276,9 +263,7 @@ var coursesAndStudents = ["MOB":30, "BEW":40, "FEW":30, "DS":40]
 
 The type is `[String:Int]`
 
-<aside class="notes">
 A list of key-value pairs separated by commas inside square brackets.
-</aside>
 
 <!-- > -->
 
@@ -300,9 +285,7 @@ print(coursesAndStudents["FEW"]!)
 
 Why are we using force unwrapping?
 
-<aside class="notes">
 The return type is an optional. Meaning the dictionary will first check if there is a value with the key provided. If there is it will return the value, nil otherwise.
-</aside>
 
 <!-- > -->
 
@@ -313,9 +296,7 @@ coursesAndStudents.updateValue(15, forKey: "ROB")
 coursesAndStudents["ROB"] = 15
 ```
 
-<aside class="notes">
 These both serve as a way to add a new pair and also to update an existing pair. The code will update the value for the key given or create a new pair if it can't find it.
-</aside>
 
 <!-- > -->
 
@@ -326,11 +307,9 @@ coursesAndStudents.removeValue(forKey:"ROB")
 coursesAndStudents["ROB"] = nil
 ```
 
-<aside class="notes">
 These will remove the key and the corresponding value from the dictionary.
 
 There is a difference between the two methods. Assigning a key to nil will remove the value and the key entirely. If we wanted to keep the key and set the value to nil (in case we are dealing with optionals) we should use the removeValue method.
-</aside>
 
 <!--
 
@@ -403,9 +382,7 @@ let plantCollection: Set<String> = ["Pothos", "Monstera", "Calathea"]
 let plantCollection = Set(["Pothos", "Monstera", "Calathea"])
 ```
 
-<aside class="notes">
 The first option uses a type annotation while the second one let's the compiler infer the type.
-</aside>
 
 <!-- > -->
 
@@ -417,9 +394,7 @@ print(plantCollection)
 
 What will be the result in the console?
 
-<aside class="notes">
 The result will be an unordered list and it will also show unique values. So even if we added the same plant twice, the set will make sure all the elements are unique.
-</aside>
 
 <!-- > -->
 
