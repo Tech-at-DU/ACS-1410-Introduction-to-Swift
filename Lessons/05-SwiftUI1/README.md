@@ -163,6 +163,8 @@ In the template contents we have `body` that behaves like a view.
 
 [Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md)
 
+Video Lesson: https://youtube.com/playlist?list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr
+
 <!-- > -->
 
 <!--
