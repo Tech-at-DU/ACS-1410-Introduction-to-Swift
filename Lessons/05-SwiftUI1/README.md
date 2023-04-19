@@ -106,7 +106,6 @@ The best option is to learn SwiftUI on the side as well.
 1. Add image
 1. Simulator
 
-<!--
 A view is a rectangular area on the screen where we can display content and interact with it.
 
 In the template contents we have `body` that behaves like a view.
@@ -140,7 +139,6 @@ In the template contents we have `body` that behaves like a view.
       .resizable()
       .scaledToFit()
       .frame(width: 100, height: 100)
--->
 
 <!-- > -->
 
@@ -161,13 +159,11 @@ In the template contents we have `body` that behaves like a view.
 
 ## In Class Activity
 
-[Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md)
+[Instructions here](./assignments/calculator.md)
 
 Video Lesson: https://youtube.com/playlist?list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr
 
 <!-- > -->
-
-<!--
 
 ## Adding it to an existing project.
 
@@ -181,7 +177,6 @@ Then just use it as a regular view with the help of the class
 let swiftUIView = ContentView()
 let viewController = UIHostingController(rootView: swiftUIView)
 ```
- -->
 
 ## Additional Resources
 
