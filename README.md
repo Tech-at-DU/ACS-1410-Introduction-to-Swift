@@ -42,6 +42,14 @@ Students by the end of the course will be able to ...
 | 12    | Thr, May  4 | Final Assessment               |                    |
 | 13    | Thr, May  9 | Final Presentations            |                    |
 
+
+Tutorial projects for final. Choose one of these: 
+
+- [Orange Tree (Game like angry birds)](https://github.com/Tech-at-DU/Orange-Tree-SpriteKit-Swift4)
+- [Habitual (Habit Tracker App)](https://github.com/Tech-at-DU/Habitual-Swift4)
+- [Gif Search iOS](https://github.com/Tech-at-DU/Giphy-Search-iOS)
+
+
 [Variables, Types & Functions]: Lessons/01-Variables-Types-&-Functions/README.md
 [Optionals & Conditionals]: Lessons/02-Optionals-&-Conditionals/README.md
 [Collection types & Control Flow]: Lessons/03-Arrays-Loops-Dictionaries/README.md

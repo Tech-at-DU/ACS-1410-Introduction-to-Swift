@@ -206,6 +206,8 @@ struct ContentView: View {
 
 You adjust these until they look best to you. 
 
+Creating 
+
 <!-- [Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md) -->
 
 <!-- > -->
