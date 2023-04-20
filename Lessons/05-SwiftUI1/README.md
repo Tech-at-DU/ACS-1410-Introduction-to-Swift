@@ -204,9 +204,99 @@ struct ContentView: View {
 
 `Text().font(.system(size: 24))` is a modifer that sets the size of the font. 
 
-You adjust these until they look best to you. 
+You adjust these until they look best to you.
 
-Creating 
+Beneath the description There is a row with "H: 85˚ L: 55˚". While this could be a single line of text, if it was multiple `Text` elements they could be contained in an `HStack`. Try this. 
+
+```Swift 
+struct ContentView: View {
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+        .font(.system(size: 24))
+      Text("70˚")
+        .font(.system(size: 60))
+      Text("Partly Cloudy")
+      // Add this v
+      HStack {
+        Text("H: 85˚")
+        Text("L: 55˚")
+      }
+    }
+  }
+}
+```
+
+Notice the `HStack` was added inside the existing `VStack`
+
+```Swift
+VStack {
+  ...
+  // Add this v
+  HStack {
+    ...
+  }
+}
+```
+
+Let's add a background. Use the image here: 
+
+![weather-bg](./assets/weather-bg.png)
+
+To stack things front to back you'll use a `ZStack`. To display an image you'll use the `Image` element. 
+
+Download the image above or use one of your own.
+
+Drag the image into the `Assets.xcassets` of your Xcode project. You'll see this in the file list below `ContentView.swift`. 
+
+Next embed everything in a `Zstack`. You'll use the `Image` element to add the image. 
+
+```Swift
+struct ContentView: View {
+  var body: some View {
+    ZStack {
+      Image("weather-bg")
+      
+      VStack {
+        Text("Cupertino")
+          .font(.system(size: 24))
+        Text("70˚")
+          .font(.system(size: 60))
+        Text("Partly Cloudy")
+        // Add this v
+        HStack {
+          Text("H: 85˚")
+          Text("L: 55˚")
+        }
+      }
+    }
+  }
+}
+```
+
+The `Image("name-image-asset")` uses the name of the image in the Assets.xcassets. Make sure these match. My image was named `weather-bg`. 
+
+Notice that the `ZStack` is the parent of the `VStack` that had been the top level element previously. 
+
+```Swift
+ZStack {
+  Image("weather-bg")
+  
+  VStack {
+    ...
+  }
+}
+```
+
+To get the image to fill the space you'll need to add some modifers. 
+
+```Swift
+Image("weather-bg")
+  .resizable() // make the image resizable
+  .aspectRatio(contentMode: .fill) // make the image fill the space
+```
+
+
 
 <!-- [Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md) -->
 
