@@ -1,5 +1,6 @@
 ## Creating the UI for a Calculator using SwiftUI
 
+Follow the video lessons here: https://youtube.com/playlist?list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr Look for the lessons starting with "01 Mob 1 1 SwiftUI Intro"
 
 Create your own version of Apple's Calculator App. In the end, your UI will look similar to this:
 
