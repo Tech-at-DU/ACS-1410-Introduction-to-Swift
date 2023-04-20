@@ -106,7 +106,6 @@ The best option is to learn SwiftUI on the side as well.
 1. Add image
 1. Simulator
 
-<!--
 A view is a rectangular area on the screen where we can display content and interact with it.
 
 In the template contents we have `body` that behaves like a view.
@@ -140,7 +139,7 @@ In the template contents we have `body` that behaves like a view.
       .resizable()
       .scaledToFit()
       .frame(width: 100, height: 100)
--->
+
 
 <!-- > -->
 
@@ -161,7 +160,55 @@ In the template contents we have `body` that behaves like a view.
 
 ## In Class Activity
 
-[Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md)
+Create the weather app. Create as much of this layout as you can. Concetrate on the top of the Screen. 
+
+![weather](./assets/weather.png)
+
+The top of the screen shows The location, temperature, and a description of the the weather. These are in a vertical stack. Each element has a different font size. 
+
+Create a new Xcode project. 
+
+Choose SwiftUI as the interface. 
+
+Open `ContentView.swift` in the editor. Everything you do will happen in the first struct. Notice there are two structs. The second struct is responsible for drawing the preview, you will not be editing this! All edits will happen in the `struct ContentView` 
+
+```Swift
+struct ContentView: View {
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+      Text("70˚")
+      Text("Partly Cloudy")
+    }
+  }
+}
+```
+
+This should show a vertical list of text elements. 
+
+Use modifiers to set the size of these elements. 
+
+```Swift 
+struct ContentView: View {
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+        .font(.system(size: 24))
+      Text("70˚")
+        .font(.system(size: 60))
+      Text("Partly Cloudy")
+    }
+  }
+}
+```
+
+`Text().font(.system(size: 24))` is a modifer that sets the size of the font. 
+
+You adjust these until they look best to you. 
+
+
+
+<!-- [Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md) -->
 
 <!-- > -->
 
