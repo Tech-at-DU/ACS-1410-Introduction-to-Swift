@@ -111,34 +111,46 @@ A view is a rectangular area on the screen where we can display content and inte
 In the template contents we have `body` that behaves like a view.
 
 1. No change needed
-2. HStack{
+2. 
+```Swift 
+HStack{
     Text("Hello World")
     Text("Hello World")
     Text("Hello World")
-   }
-3. VStack(spacing:10){
+}
+```
+3. 
+```Swift 
+VStack(spacing:10){
     Text("Hello World")
     Text("Hello World")
     Text("Hello World")
-   }
-4. VStack(spacing:30){
+}
+```
+4. 
+```Swift 
+VStack(spacing:30){
     HStack(spacing:30){
       Text("👩🏻‍💻")
       Text("👩🏾‍💻")
       Text("👨🏽‍💻")
       Text("👨🏻‍💻")
-    }
+   }
     HStack(spacing:30){
       Text("👩🏻‍💻")
       Text("👩🏾‍💻")
       Text("👨🏽‍💻")
       Text("👨🏻‍💻")
-    }
    }
- 5. Image("01")
-      .resizable()
-      .scaledToFit()
-      .frame(width: 100, height: 100)
+}
+```
+ 5. 
+```Swift 
+Image("01")
+    .resizable()
+    .scaledToFit()
+    .frame(width: 100, height: 100)
+```
 
 <!-- > -->
 
