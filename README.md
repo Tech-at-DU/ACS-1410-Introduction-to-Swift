@@ -43,12 +43,15 @@ Students by the end of the course will be able to ...
 | 13    | Thr, May  9 | Final Presentations            |                    |
 
 
+## Final Project
 Tutorial projects for final. Choose one of these: 
 
 - [Orange Tree (Game like angry birds)](https://github.com/Tech-at-DU/Orange-Tree-SpriteKit-Swift4)
 - [Habitual (Habit Tracker App)](https://github.com/Tech-at-DU/Habitual-Swift4)
 - [Gif Search iOS](https://github.com/Tech-at-DU/Giphy-Search-iOS)
+- [Final Project] A brain game demonstraing the stroop effect
 
+Choose one of the projects above for the final project. This will be due at the of the term. 
 
 [Variables, Types & Functions]: Lessons/01-Variables-Types-&-Functions/README.md
 [Optionals & Conditionals]: Lessons/02-Optionals-&-Conditionals/README.md
@@ -84,7 +87,7 @@ Tutorial projects for final. Choose one of these:
 | [Calculator App] | Tue, Apr 11   | Tue, Apr 18  | [Gradescope] |
 | [Lab 3]          | Tue, Apr 18   | Thr, Apr 20  | [Gradescope] |
 | [Pop Lab]        | Tue, Apr 25   | Thr, Apr 27  | [Gradescope] |
-| [Final Project]  | Thr, Apr 27   | Thr, May  9  | [Gradescope] |
+| See above [#final-project]      | Thr, Apr 27   | Thr, May  9  | [Gradescope] |
 
 [GradeScope]: https://www.gradescope.com/courses/
 
