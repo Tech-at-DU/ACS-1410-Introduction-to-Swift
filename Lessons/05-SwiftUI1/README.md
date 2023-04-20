@@ -111,46 +111,35 @@ A view is a rectangular area on the screen where we can display content and inte
 In the template contents we have `body` that behaves like a view.
 
 1. No change needed
-2. 
-```Swift 
-HStack{
+2. HStack{
     Text("Hello World")
     Text("Hello World")
     Text("Hello World")
-}
-```
-3. 
-```Swift 
-VStack(spacing:10){
+   }
+3. VStack(spacing:10){
     Text("Hello World")
     Text("Hello World")
     Text("Hello World")
-}
-```
-4. 
-```Swift 
-VStack(spacing:30){
+   }
+4. VStack(spacing:30){
     HStack(spacing:30){
       Text("👩🏻‍💻")
       Text("👩🏾‍💻")
       Text("👨🏽‍💻")
       Text("👨🏻‍💻")
-   }
+    }
     HStack(spacing:30){
       Text("👩🏻‍💻")
       Text("👩🏾‍💻")
       Text("👨🏽‍💻")
       Text("👨🏻‍💻")
+    }
    }
-}
-```
- 5. 
-```Swift 
-Image("01")
-    .resizable()
-    .scaledToFit()
-    .frame(width: 100, height: 100)
-```
+ 5. Image("01")
+      .resizable()
+      .scaledToFit()
+      .frame(width: 100, height: 100)
+
 
 <!-- > -->
 
@@ -171,11 +160,57 @@ Image("01")
 
 ## In Class Activity
 
-[Instructions here](./assignments/calculator.md)
+Create the weather app. Create as much of this layout as you can. Concetrate on the top of the Screen. 
 
-Video Lesson: https://youtube.com/playlist?list=PLoN_ejT35AEjWgf6sdBBvNl6bw1g9w4gr
+![weather](./assets/weather.png)
+
+The top of the screen shows The location, temperature, and a description of the the weather. These are in a vertical stack. Each element has a different font size. 
+
+Create a new Xcode project. 
+
+Choose SwiftUI as the interface. 
+
+Open `ContentView.swift` in the editor. Everything you do will happen in the first struct. Notice there are two structs. The second struct is responsible for drawing the preview, you will not be editing this! All edits will happen in the `struct ContentView` 
+
+```Swift
+struct ContentView: View {
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+      Text("70˚")
+      Text("Partly Cloudy")
+    }
+  }
+}
+```
+
+This should show a vertical list of text elements. 
+
+Use modifiers to set the size of these elements. 
+
+```Swift 
+struct ContentView: View {
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+        .font(.system(size: 24))
+      Text("70˚")
+        .font(.system(size: 60))
+      Text("Partly Cloudy")
+    }
+  }
+}
+```
+
+`Text().font(.system(size: 24))` is a modifer that sets the size of the font. 
+
+You adjust these until they look best to you. 
+
+<!-- [Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md) -->
 
 <!-- > -->
+
+<!--
 
 ## Adding it to an existing project.
 
@@ -189,10 +224,10 @@ Then just use it as a regular view with the help of the class
 let swiftUIView = ContentView()
 let viewController = UIHostingController(rootView: swiftUIView)
 ```
+ -->
 
 ## Additional Resources
 
-- https://developer.apple.com/videos/play/wwdc2019/216/
 - [What is SwiftUI](https://developer.apple.com/xcode/swiftui/)
 - [SwiftUI tutorials](https://developer.apple.com/tutorials/swiftui/tutorials)
 - [100 days of SwiftUI](https://www.hackingwithswift.com/100/swiftui)
