@@ -87,7 +87,7 @@ Choose one of the projects above for the final project. This will be due at the 
 | [Calculator App] | Tue, Apr 11   | Tue, Apr 18  | [Gradescope] |
 | [Lab 3]          | Tue, Apr 18   | Thr, Apr 20  | [Gradescope] |
 | [Pop Lab]        | Tue, Apr 25   | Thr, Apr 27  | [Gradescope] |
-| See above [#final-project]      | Thr, Apr 27   | Thr, May  9  | [Gradescope] |
+| [Your final project](#final-project)      | Thr, Apr 27   | Thr, May  9  | [Gradescope] |
 
 [GradeScope]: https://www.gradescope.com/courses/
 
