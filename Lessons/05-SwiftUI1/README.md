@@ -192,6 +192,7 @@ let viewController = UIHostingController(rootView: swiftUIView)
 
 ## Additional Resources
 
+- https://developer.apple.com/videos/play/wwdc2019/216/
 - [What is SwiftUI](https://developer.apple.com/xcode/swiftui/)
 - [SwiftUI tutorials](https://developer.apple.com/tutorials/swiftui/tutorials)
 - [100 days of SwiftUI](https://www.hackingwithswift.com/100/swiftui)
