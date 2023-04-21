@@ -296,13 +296,188 @@ Image("weather-bg")
   .aspectRatio(contentMode: .fill) // make the image fill the space
 ```
 
+While this looks good so far. With the background the text might look better in white. You can add modifers to the text elements to any element to set the fore ground color like this: 
 
+```Swift
+Text("Cupertino")
+  .font(.system(size: 24))
+  .foregroundColor(.white)
+```
 
-<!-- [Instructions here](https://github.com/Make-School-Courses/MOB-1.1-Introduction-to-Swift/blob/master/Lessons/05-SwiftUI1/assignments/calculator.md) -->
+While that would work it would be tedious since you'd need to add a modifer for each text element. 
+
+Better, in this case is to add the modfier to a parent. This way the children will inherit the modifer. 
+
+```Swift
+struct ContentView: View {
+  var body: some View {
+    ZStack {
+      Image("weather-bg")
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .frame(alignment: .topLeading)
+      
+      VStack {
+        Text("Cupertino")
+          .font(.system(size: 24))
+        Text("70˚")
+          .font(.system(size: 60))
+        Text("Partly Cloudy")
+        // Add this v
+        HStack {
+          Text("H: 85˚")
+          Text("L: 55˚")
+        }
+      }
+    }
+    .foregroundColor(.white) // Add this!!!!!!
+  }
+}
+```
+
+Here the modifer added to the `ZStack` sets the foreground color for all of the inner elements. 
+
+```Swift
+ZStack {
+  ...
+  VStack {
+    ...
+    HStack {
+      ...
+    }
+  }
+}
+.foregroundColor(.white)
+```
+
+This shows the stack structure with the modifer. 
+
+Like components in react, if you're familiar, SwiftUI Views can be be broken out into separate subviews. Imagine you want to break out the Weather display from the background image and ZStack. 
+
+Create a new SwiftUI subview like this. You can add the following in the same file but outside the existing code blocks. Start with: 
+
+```Swift 
+struct WeatherView: View {
+  var body: some View {
+
+  }
+}
+```
+
+Notice this new view is the same base structure as `ContentView` but has a different name. XCode will show an error until this view renders a view element. 
+
+Cut the `VStack` and everything in it from inside of the `ZStack` in `ContentView`. 
+
+This should give you something like this: 
+
+```Swift
+struct WeatherView: View {
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+        .font(.system(size: 24))
+      Text("70˚")
+        .font(.system(size: 60))
+      Text("Partly Cloudy")
+      // Add this v
+      HStack {
+        Text("H: 85˚")
+        Text("L: 55˚")
+      }
+    }
+    .foregroundColor(.white)
+  }
+}
+
+struct ContentView: View {
+  var body: some View {
+    ZStack {
+      Image("weather-bg")
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .frame(alignment: .topLeading)
+    }
+  }
+}
+```
+
+Be careful of the curly braces. It can be tricky to find the matching braces! 
+
+Notice there are two structs, SwiftUI views are defined as structs, `WeatherView` and `ContentView`. 
+
+To use the new `WeatherView` in the `ContentView` add it below the `Image` like this. 
+
+```Swift
+struct ContentView: View {
+  var body: some View {
+    ZStack {
+      Image("weather-bg")
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .frame(alignment: .topLeading)
+      
+      WeatherView() // Add the WeatherView here!!!!!
+    }
+  }
+}
+```
+
+The each of the two views is now simplified. You can also move these views into seprate Swift files to organize them. 
+
+Views can also receive parameters from outside to pass data into the view that can be displayed. Give this a try by passing the temperature into the `WeatherView`. 
+
+Parameters in SwiftUI Views are defined like variables. Define a `temp` var in `WeatherView`. 
+
+```Swift
+struct WeatherView: View {
+  var temp: String // Add a new param here!!!!
+  var body: some View {
+    ...
+  }
+}
+```
+
+Use that parameter to set the temp strin inside the view. 
+
+```Swift
+struct WeatherView: View {
+  var temp: String
+
+  var body: some View {
+    VStack {
+      Text("Cupertino")
+        .font(.system(size: 24))
+      Text("\(temp)˚") // Add temp here!!!!!
+        .font(.system(size: 60))
+      Text("Partly Cloudy")
+      HStack {
+        Text("H: 85˚")
+        Text("L: 55˚")
+      }
+    }
+    .foregroundColor(.white)
+  }
+}
+```
+
+To pass the a value you will need to add the new parameter where the instance of the view is created. You'll be seeing an error until you do that!
+
+```Swift
+struct ContentView: View {
+  var body: some View {
+    ZStack {
+      Image("weather-bg")
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .frame(alignment: .topLeading)
+      
+      WeatherView(temp: "72")
+    }
+  }
+}
+```
 
 <!-- > -->
-
-<!--
 
 ## Adding it to an existing project.
 
@@ -316,7 +491,7 @@ Then just use it as a regular view with the help of the class
 let swiftUIView = ContentView()
 let viewController = UIHostingController(rootView: swiftUIView)
 ```
- -->
+
 
 ## Additional Resources
 
