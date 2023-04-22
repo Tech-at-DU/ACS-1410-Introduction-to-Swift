@@ -152,8 +152,6 @@ A binding connects a property to a source of truth stored elsewhere, instead of 
 <!-- > -->
 
 ```swift
-@Binding var isPlaying: Bool
-
 struct PlayButton: View {
     @Binding var isPlaying: Bool
     var body: some View {
