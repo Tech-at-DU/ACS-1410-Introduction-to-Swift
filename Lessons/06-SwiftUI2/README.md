@@ -153,6 +153,7 @@ A binding connects a property to a source of truth stored elsewhere, instead of 
 
 ```swift
 struct PlayButton: View {
+    // Creates a binding to the var in ContentView (below)
     @Binding var isPlaying: Bool
     var body: some View {
         Button(action: {
@@ -171,17 +172,17 @@ For example, a button that toggles between play and pause can create a binding t
 <!-- > -->
 
 ```swift
-struct PlayerView: View {
-    var episode: Episode
-    @State private var isPlaying: Bool = false
-
-    var body: some View {
-        VStack {
-            Text(episode.title)
-            Text(episode.showTitle)
-            PlayButton(isPlaying: $isPlaying)
-        }
+struct ContentView: View {
+  @State var isPlaying = false
+  
+  var body: some View {
+    VStack {
+      PlayButton(isPlaying: $isPlaying)
+        .font(.system(size: 100))
+      
+      Text(isPlaying ? "Playing" : "Paused")
     }
+  }
 }
 ```
 <aside class ="notes">
