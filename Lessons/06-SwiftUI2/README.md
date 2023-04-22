@@ -53,6 +53,8 @@ struct ContentView: View {
 }
 ```
 
+The code above fails with the error: _Cannot use mutating member on immutable value: 'self' is immutable_
+
 <!-- > -->
 
 ## Property wrappers
