@@ -225,12 +225,106 @@ When `PlayerView` initializes `PlayButton`, it passes a binding of its state pro
 
 ## In Class Activity
 
-Complete the refactoring of the Calculator app.
+Try and recreate this pizza order form with SwiftUI. 
 
-Stretch challenges:
-- Keep the numbers as you make operations (currently it's shows a 0 in between)
-- Support for decimals
-- Support for percent
+![Pizza order](./pizza-screenshot.png)
+
+Structure the form like this: 
+
+```Swift
+Form {
+    Section { /* name and address */ }
+    Section { /* pickup or delivery */ }
+    Section { /* Pizza size and vege */ }
+    Section { /* order summary */ }
+    Section { /* place order button */ }
+}
+```
+
+Read about Form: https://developer.apple.com/documentation/swiftui/form/
+
+Read about Section: https://developer.apple.com/documentation/swiftui/section/
+
+Use an `@State` var for each of the form input elements. 
+
+- `inputName` String - TextField
+- `inputAddress` String - TextField
+- `selectedSize` enum - Picker
+- `forPickup` Bool - Toggle
+- `isVegetarian` Bool - Toggle
+
+For input text use: 
+
+```Swift
+struct ContentView: View {
+  @State var name = "" // define a var 
+
+  var body: some View {
+    TextField("Name", text: $name) // set the var here!
+  }
+}
+```
+
+Read about TextField here: https://developer.apple.com/documentation/swiftui/textfield/
+
+For the Toggles use: 
+
+```Swift
+struct ContentView: View {
+  // Define a variable
+  @State var pickup = false
+  
+  var body: some View {
+    // label, variable (since it can be set use $)
+    Toggle("Pick up or delivery", isOn: $pickup)
+  }
+}
+```
+
+Read about Toggle here: https://developer.apple.com/documentation/swiftui/toggle/
+
+For the picker you need to define an enum like this: 
+
+```Swift
+// enum of type PizzaSize
+enum PizzaSize: String, CaseIterable, Identifiable {
+  case eight, twelve, twenty
+  var id: Self { self }
+}
+```
+
+Use the enum with the picker like this: 
+
+```Swift
+struct ContentView: View {
+  // selected 
+  @State var selectedSize: PizzaSize = .twelve
+  
+  var body: some View {
+    Picker("Pizza Size", selection: $selectedSize, content: {
+      Text("8\"").tag(PizzaSize.eight)
+      Text("12\"").tag(PizzaSize.twelve)
+      Text("20\"").tag(PizzaSize.twenty)
+    })
+  }
+}
+```
+
+Read about the picker here: https://developer.apple.com/documentation/swiftui/picker/
+
+IN the summary section you will display the results of the form input. To do this use the variables you have defined. When *reading* a variable you don't use the $. 
+
+```Swift
+// Display the name
+Text("\(name) ordered")
+// Display selectedSize need to use the rawValue
+Text("\(selectedSize.rawValue) inch pizza")
+// Display isVegetarian, use a ternary 
+Text("is vegetarian \(isVegetarian ? "Yes" : "No")")
+// 
+```
+
+
 
 <!-- > -->
 
