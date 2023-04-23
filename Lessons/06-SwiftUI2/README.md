@@ -45,13 +45,17 @@ struct ContentView: View {
     var isAuthenticated = false
     var body: some View {
         Button(action: {
-            self.isAuthenticated.toggle()
+            self.isAuthenticated.toggle() // Error!
         }, label: {
             Text("auth is: \(isAuthenticated)")
         })
     }
 }
 ```
+
+This code produces an error: 
+
+> Cannot use mutating member on immutable value: 'self' is immutable
 
 <!-- > -->
 
@@ -75,16 +79,19 @@ When a `@State` property changes, SwiftUI automatically knows that it should rel
 
 ```swift
 struct ContentView: View {
-    @State var isAuthenticated = false
+    @State var isAuthenticated = false // @State property wrapper
+
     var body: some View {
         Button(action: {
-            self.isAuthenticated.toggle()
+            self.isAuthenticated.toggle() 
         }, label: {
             Text("auth is: \(isAuthenticated.description)")
         })
     }
 }
 ```
+
+Using the @State property wrapper here solves the error you saw earlier. 
 
 <!-- > -->
 
@@ -116,6 +123,8 @@ struct ContentView: View {
     }
 }
 ```
+
+Important concept: `@State` is used to define variables that are used in a View. To _read_ a variable use it's name, for example: `password`. To update a vairable you must prefix the name with the `$`, for example: `$password`.
 
 <!-- > -->
 
@@ -150,8 +159,7 @@ A binding connects a property to a source of truth stored elsewhere, instead of 
 <!-- > -->
 
 ```swift
-@Binding var isPlaying: Bool
-
+// Create a PlayButton view
 struct PlayButton: View {
     @Binding var isPlaying: Bool
     var body: some View {
@@ -164,9 +172,30 @@ struct PlayButton: View {
 }
 ```
 
+Now use the PlayButton in your ContentView. 
+
+```Swift 
+struct ContentView: View {
+  @State var isPlaying = false
+  
+  var body: some View {
+    VStack {
+      PlayButton(isPlaying: $isPlaying)
+        .font(.system(size: 100))
+      
+      Text(isPlaying ? "Playing" : "Paused")
+    }
+  }
+}
+```
+
 <aside class"notes">
 For example, a button that toggles between play and pause can create a binding to a property of its parent view using the Binding property wrapper.
 </aside>
+
+Important! When a variable exists in another view you'll use `@Binding`. This is case the `isPLaying` variable exists in the parent view, `ContentView`, but is read and set in the child view, `PlayButton`. 
+
+Since the `isPlaying` property is used by both 
 
 <!-- > -->
 
@@ -188,7 +217,7 @@ struct PlayerView: View {
 The parent view declares a property to hold the playing state, using the
 State property wrapper to indicate that this property is the value's source of truth.
 
-When PlayerView initializes PlayButton, it passes a binding of its state property into the button's binding property. Whenever the user taps the PlayButton, the PlayerView updates its isPlaying state.
+When `PlayerView` initializes `PlayButton`, it passes a binding of its state property into the button's binding property. Whenever the user taps the PlayButton, the PlayerView updates its isPlaying state.
 </aside>
 
 <!-- > -->
