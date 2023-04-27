@@ -40,7 +40,7 @@ Students by the end of the course will be able to ...
 | 10    | Thr, Apr 27 | [Basic Navigation]             |                    |
 | 11    | Tue, May  2 | [POP] [Closures]               |                    |
 | 12    | Thr, May  4 | Final Assessment               |                    |
-| 13    | Thr, May  9 | Final Presentations            |                    |
+| 13    | Tue, May  9 | Final Presentations            |                    |
 
 
 ## Final Project
