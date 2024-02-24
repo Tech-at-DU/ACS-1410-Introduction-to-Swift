@@ -41,8 +41,7 @@ Students by the end of the course will be able to ...
 | 11    | Thr, Apr 25 | [POP] [Closures]               |                    |
 | 12    | Tue, Apr 30 | Final Assessment               |                    |
 | 13    | Thr, May  2 | Final Presentations            |                    |
-| 14    | Thr, May  6 | Final Presentations            |                    |
-| 15    | Thr, May  8 | Final Presentations            |                    |
+| 14    | Tue, May  7 | Final Presentations            |                    |
 
 
 ## Final Project
