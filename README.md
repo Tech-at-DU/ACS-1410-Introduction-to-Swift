@@ -22,25 +22,27 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** Tuesday, March 28 – Tuesday, May 9, 2023 (7 weeks)
+**Course Dates:** Tuesday, March 20 – Tuesday, May 8, 2023 (7 weeks)
 
 **Class Times:** Tuesday, Thursday at 1:00 PM – 3:45 PM (15 class sessions)
 
 | Class |          Date          |                 Topics                  | Homework |
 |:-----:|:----------------------:|:---------------------------------------:|:--------:|
-|  1    | Tue, Mar 28 | [Variables, Types & Functions] | [Lab 1]            |
-|  2    | Thr, Mar 30 | [Optionals & Conditionals]     | [Lab 2]            |
-|  3    | Tue, Apr  4 | [Intro to UIKit]               | [Basic Navigation] |
-|  4    | Thr, Apr  6 | Constraints                    | [Tip Calculator]   |
-|  5    | Tue, Apr 11 | [Structs & Enums]              |                    |
-|  6    | Thr, Apr 13 | [Classes + OOP]                |                    |
-|  7    | Tue, Apr 18 | [Collection types & Control Flow] | [Final Project] |
-|  8    | Thr, Apr 20 | [SwiftUI Pt.1]                 | [Calculator App]   |
-|  9    | Tue, Apr 25 | [SwiftUI Pt.2]                 |                    |
-| 10    | Thr, Apr 27 | [Basic Navigation]             |                    |
-| 11    | Tue, May  2 | [POP] [Closures]               |                    |
-| 12    | Thr, May  4 | Final Assessment               |                    |
-| 13    | Tue, May  9 | Final Presentations            |                    |
+|  1    | Thr, Mar 21 | [Variables, Types & Functions] | [Lab 1]            |
+|  2    | Tue, Mar 26 | [Optionals & Conditionals]     | [Lab 2]            |
+|  3    | Thr, Mar 28 | [Intro to UIKit]               | [Basic Navigation] |
+|  4    | Tue, Apr  2 | Constraints                    | [Tip Calculator]   |
+|  5    | Thr, Apr  4 | [Structs & Enums]              |                    |
+|  6    | Tue, Apr  9 | [Classes + OOP]                |                    |
+|  7    | Thr, Apr 11 | [Collection types & Control Flow] | [Final Project] |
+|  8    | Tue, Apr 16 | [SwiftUI Pt.1]                 | [Calculator App]   |
+|  9    | Thr, Apr 18 | [SwiftUI Pt.2]                 |                    |
+| 10    | Tue, Apr 23 | [Basic Navigation]             |                    |
+| 11    | Thr, Apr 25 | [POP] [Closures]               |                    |
+| 12    | Tue, Apr 30 | Final Assessment               |                    |
+| 13    | Thr, May  2 | Final Presentations            |                    |
+| 14    | Thr, May  6 | Final Presentations            |                    |
+| 15    | Thr, May  8 | Final Presentations            |                    |
 
 
 ## Final Project
