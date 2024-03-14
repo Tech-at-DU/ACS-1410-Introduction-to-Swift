@@ -233,7 +233,6 @@ Source: Swift Fundamentals. Apple Books.
 In this playground we review the concepts learned so far, experiment using arithmetic operations and also learn about a new type: Strings.
 
 - [Variables Playground](https://github.com/Tech-at-DU/swift-lab1)
-- [Playground Variables](../../playgrounds/01-variables.md)
 - [Playgrounds Functions](../../playgrounds/02-functions.md)
 
 <!-- > -->
