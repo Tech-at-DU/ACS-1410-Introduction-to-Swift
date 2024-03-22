@@ -236,7 +236,7 @@ max = a > b ? a : b
 
 ## In Class Activity
 
-- [Conditionals - Playground](./assets/conditionals-fixed.zip)
+- [Conditionals - Playground](https://github.com/Tech-at-DU/Intro-Conditionals-Swift-Playground)
 
 <!-- > -->
 
