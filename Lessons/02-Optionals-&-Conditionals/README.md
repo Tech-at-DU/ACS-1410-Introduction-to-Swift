@@ -91,7 +91,7 @@ Allows the program to execute the block **only** if the condition is true.
 ```swift
 let color = "red"
 
-if color == "red"{
+if color == "red" {
   print("This is a primary color")
 }
 ```
