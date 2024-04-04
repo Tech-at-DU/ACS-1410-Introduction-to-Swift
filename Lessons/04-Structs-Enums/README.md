@@ -553,10 +553,9 @@ Find the solutions to each step of the challenges [here](https://github.com/Make
 
 ## Lab + After Class
 
-- [Lab 4](https://github.com/Make-School-Labs/swift-lab4)
-- Optional Review on Swift topics (up to what we've seen) [Swift Playgrounds](https://github.com/MakeSchool-Tutorials/Swift-Language-Playgrounds/archive/swift4.zip)
-- Look up Property Observers
-- Check the documentation for Optionals and discover how they relate to today's lesson. **Optional chaining**
+- [Lab 4](https://github.com/Tech-at-DU/ACS-1410-Swift-Lab-4)
+- Stretch Goal: Look up Property Observers
+- Stretch Goal: Check the documentation for Optionals and discover how they relate to today's lesson. **Optional chaining**
 
 <!-- > -->
 
