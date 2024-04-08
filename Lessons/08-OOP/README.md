@@ -398,7 +398,7 @@ OOP in iOS development:
 
 ## After Class - Lab
 
-- [OOP Lab - Optional](https://github.com/MakeSchool-Tutorials/Intro-Object-Oriented-Programming-Playground/archive/master.zip)
+- [OOP Lab](https://github.com/MakeSchool-Tutorials/Intro-Object-Oriented-Programming-Playground/archive/master.zip)
 - Look up what are static properties
 - Loo up Type Casting for `Any` and `AnyObject`
 
