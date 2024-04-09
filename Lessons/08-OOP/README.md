@@ -97,7 +97,7 @@ class Person {
 class BandMember: Person {
   var songs: [String] = []
 
-  func performedSong(_ song: String)
+  func performedSong(_ song: String) {
     print("Performed: \(song)")
     songs.append(song)
   }
