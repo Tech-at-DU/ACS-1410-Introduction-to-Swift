@@ -77,7 +77,7 @@ Any type that satisfies the requirements of a protocol is said to **conform** to
 
 A contract is a guarantee that some terms will be satisfied. ✍🏼
 
-Anything on the contract becomes a set of obligations to whoever gets it.
+Anything on the contract becomes a set of obligations to whoever "signs" it.
 
 <!-- whiteboard mini diagram -->
 
