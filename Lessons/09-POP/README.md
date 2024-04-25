@@ -85,45 +85,47 @@ Anything on the contract becomes a set of obligations to whoever "signs" it.
 
 ```swift
 protocol FullName {
-  var fullName: String {get}
-  func printToConsole()
+  var fullName: String
+  func printToConsole(message: String) -> Bool
 }
 ```
 
 <aside class="notes">
-This protocol indicates that any class, struct or enum that conforms to it, needs a property called fullName. And it is get only. This means we can only read it after we give an initial value.
+This protocol indicates that any class, struct or enum that conforms to it, needs a property called fullName.
 
-We can declare methods in a protocol but notice we don't define any implementation for them. A protocol makes no assumption about the implementation details of any type that conforms to it.
+You can declare methods in a protocol. Notice you don't define an implementation. A protocol makes no assumption about the implementation details of any type that conforms to it. A protocol only defines the method name, it's parameters and return value. 
 </aside>
 
 <!-- v -->
 
 ```swift
-struct Person: FullName{
-    var fullName: String
-    func printToConsole() {
-        print(fullName)
-    }
+struct Person: FullName {
+  var fullName: String
+  func printToConsole(message: String) -> Bool {
+    print(fullName)
+    return true
+  }
 }
 
 var author = Person(fullName: "Haruki Murakami")
 
 struct Person: FullName{
-    var firstName: String
-    var lastName: String
-    var fullName: String {
-      return "\(firstName) \(lastName)"
-    }
-    func printToConsole() {
-        print(fullName)
-    }
+  var firstName: String
+  var lastName: String
+  var fullName: String {
+    return "\(firstName) \(lastName)"
+  }
+  func printToConsole(message: String) -> Bool {
+    print(fullName)
+    return true
+  }
 }
 
 var author = Person(firstName: "Haruki", lastName: "Murakami")
 ```
 
 <aside class="notes">
-Conforming to a protocol looks like class inheritance but it isn’t. Structs and enumerations can also conform to protocols with this syntax.
+Conforming to a protocol looks like class inheritance but it isn’t. Structs and enumerations can also conform to protocols with the same syntax.
 
 If a class inherits from another and also conforms to a protocol, all can be separated by commas and the inheritance comes first.
 </aside>
@@ -145,6 +147,8 @@ Implement `Perimeter` with structs representing `Square`, and `Circle`.
 ## Mini challenge
 
 Add a circle and a square to an array, print their perimeters.
+
+Notice, you have two different types but the array sees the type as the protocol so they are compatible! 
 
 <!-- > -->
 
